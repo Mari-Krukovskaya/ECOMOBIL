@@ -1,0 +1,1311 @@
+:root {
+    --dark-color: #000000;
+    --white-color: #FFFFFF;
+}
+
+body {
+    background: #303030;
+    font-family: "Cera Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1172px;
+    margin: 0 auto 75px;
+    padding: 0 16px;
+    overflow: hidden;
+}
+
+.container_1 {
+    position: relative;
+    width: 1465px;
+    height: 774px;
+    background: black;
+}
+
+.white__logo {
+    background-image: url(/images/logo/Лого\ E.png);
+    background-size: 18%;
+    background-position: bottom 0% left 0%;
+    background-repeat: no-repeat;
+    fill: #C2BFBF;
+}
+
+.advantage__company {
+    position: absolute;
+    top: -17px;
+    left: -17px;
+    width: 100%;
+    height: 100%;
+}
+
+.block__main-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translate(189px, -1px);
+}
+
+.block__main-img {
+    background-image: url('/images/logo/ECOMOBIL.png');
+    background-position: calc(3% - 35px) calc(12% - 17px);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.block__main-img img {
+    object-fit: cover;
+    height: 100%;
+    width: 88%;
+}
+
+.text__title {
+    color: var(--white-color);
+    font-size: 24px;
+    line-height: 4;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    transform: translate(231px, 72px);
+}
+
+
+.block__container-item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.container__block-item1::before {
+    content: 'Прямые поставки автомобилей от производителя';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    color: white;
+    border-radius: 20px;
+    background: rgb(24 24 24 / 0%);
+    width: 278px;
+    height: 94px;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid white;
+    border-bottom: none;
+    transform: translate(11rem, 13rem);
+    padding-top: 21px;
+    padding-left: 95px;
+    padding-right: 20px
+}
+
+.block__01::after {
+    content: "01";
+    text-align: left;
+    position: absolute;
+    left: 224px;
+    width: 41px;
+    line-height: 297px;
+    height: 50px;
+    font-size: 40px;
+    color: rgb(126 125 125 / 74%);
+    font-weight: 500;
+}
+
+
+.container__block-item2::before {
+    content: 'Уникальные цены от завода';
+    text-align: left;
+    position: absolute;
+    top: 0;
+    color: white;
+    border-radius: 20px;
+    background: rgb(24 24 24 / 0%);
+    width: 273px;
+    height: 94px;
+    font-size: 16px;
+    line-height: 17px;
+    border: 1px solid white;
+    border-bottom: none;
+    transform: translate(30rem, 13rem);
+    padding-top: 31px;
+    padding-left: 96px;
+    padding-right: 23px;
+}
+
+.block__02::after {
+    content: "02";
+    position: absolute;
+    left: 526px;
+    width: 41px;
+    line-height: 297px;
+    height: 50px;
+    font-size: 40px;
+    color: rgb(126 125 125 / 74%);
+    font-weight: 500;
+}
+
+.container__block-item3::before {
+    content: 'Ассортимент эксклюзивных моделей';
+    text-align: justify;
+    position: absolute;
+    top: 0;
+    color: white;
+    border-radius: 20px;
+    background: rgb(24 24 24 / 0%);
+    width: 278px;
+    height: 94px;
+    font-size: 16px;
+    line-height: 18px;
+    border: 1px solid white;
+    border-bottom: none;
+    transform: translate(11rem, 21rem);
+    padding-top: 22px;
+    padding-left: 92px;
+    padding-right: 80px;
+}
+
+.block__03::after {
+    content: "03";
+    position: absolute;
+    left: 217px;
+    width: 41px;
+    line-height: 553px;
+    height: 50px;
+    font-size: 40px;
+    color: rgb(126 125 125 / 74%);
+    font-weight: 500;
+}
+
+
+.container__block-item4::before {
+    content: 'Заключение договора с клиентом';
+    position: absolute;
+    top: 0;
+    color: white;
+    border-radius: 20px;
+    background: rgb(24 24 24 / 0%);
+    width: 278px;
+    height: 94px;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid white;
+    border-bottom: none;
+    transform: translate(30rem, 21rem);
+    padding-top: 26px;
+    padding-left: 97px;
+    padding-right: 15px;
+}
+
+.block__04::after {
+    content: "04";
+    position: absolute;
+    left: 526px;
+    width: 41px;
+    line-height: 553px;
+    height: 50px;
+    font-size: 40px;
+    color: rgb(126 125 125 / 74%);
+    font-weight: 500;
+}
+
+.container__block-item5::before {
+    content: 'Возможность страхования груза';
+    position: absolute;
+    top: 0;
+    color: white;
+    border-radius: 20px;
+    background: rgb(24 24 24 / 0%);
+    width: 278px;
+    height: 94px;
+    font-size: 16px;
+    line-height: 17px;
+    border: 1px solid white;
+    border-bottom: none;
+    transform: translate(11rem, 29rem);
+    padding-top: 29px;
+    padding-left: 88px;
+    padding-right: 24px;
+}
+
+.block__05::after {
+    content: "05";
+    position: absolute;
+    left: 217px;
+    width: 41px;
+    line-height: 805px;
+    height: 50px;
+    font-size: 40px;
+    color: rgb(126 125 125 / 74%);
+    font-weight: 500;
+}
+
+.container__block-item6::before {
+    content: 'Гарантированная доставка до двери';
+    position: absolute;
+    top: 0;
+    color: white;
+    border-radius: 20px;
+    background: rgb(24 24 24 / 0%);
+    width: 278px;
+    height: 94px;
+    font-size: 16px;
+    line-height: 17px;
+    border: 1px solid white;
+    border-bottom: none;
+    transform: translate(30rem, 29rem);
+    padding-top: 29px;
+    padding-left: 96px;
+    padding-right: 28px;
+}
+
+.block__06::after {
+    content: "06";
+    position: absolute;
+    left: 528px;
+    width: 41px;
+    line-height: 805px;
+    height: 50px;
+    font-size: 40px;
+    color: rgb(126 125 125 / 74%);
+    font-weight: 500;
+}
+
+.container__block-item7::before {
+    content: 'Оплата после получения товара';
+    position: absolute;
+    top: 0;
+    color: white;
+    border-radius: 20px;
+    background: rgb(24 24 24 / 0%);
+    width: 278px;
+    height: 94px;
+    font-size: 16px;
+    line-height: 18px;
+    border: 1px solid white;
+    border-bottom: none;
+    transform: translate(11rem, 37rem);
+    padding-top: 28px;
+    padding-left: 84px;
+    padding-right: 23px
+}
+
+.block__07::after {
+    content: "07";
+    position: absolute;
+    left: 216px;
+    width: 41px;
+    line-height: 1065px;
+    height: 50px;
+    font-size: 40px;
+    color: rgb(126 125 125 / 74%);
+    font-weight: 500;
+}
+
+.container__block-item8::before {
+    content: 'Срок доставки от 20 дней';
+    position: absolute;
+    top: 2px;
+    color: white;
+    border-radius: 20px;
+    background: rgb(24 24 24 / 0%);
+    width: 278px;
+    height: 94px;
+    font-size: 16px;
+    line-height: 17px;
+    border: 1px solid white;
+    border-bottom: none;
+    transform: translate(30rem, 37rem);
+    padding-top: 31px;
+    padding-left: 93px;
+    padding-right: 49px;
+}
+
+.block__08::after {
+    content: "08";
+    position: absolute;
+    left: 528px;
+    width: 41px;
+    line-height: 1065px;
+    height: 50px;
+    font-size: 40px;
+    color: rgb(126 125 125 / 74%);
+    font-weight: 500;
+}
+
+
+/* section-1 */
+
+.exterior__interior-container {
+    background: linear-gradient(to right, #80808094, white);
+}
+
+.title__text {
+    color: var(--white-color);
+    font-size: 40px;
+    font-weight: 400;
+    padding-top: 105px;
+    padding-bottom: 40px;
+}
+
+.btn__container {
+    display: flex;
+
+}
+
+.block__btn {
+    width: 270px;
+    height: 53px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    background: #8f8e8e00 !important;
+    transition: 0.3s;
+    border: 1px solid rgb(139 139 139);
+    border-radius: 10px;
+    color: #4c4c4cf7;
+    border-bottom: none;
+}
+
+.block__btn:hover {
+    background-image: linear-gradient(to right, gray, black) !important;
+    color: white;
+}
+
+.block__btn:disabled {
+    background-image: none;
+    cursor: not-allowed;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.img__tab2 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: translate(658px, -500px);
+}
+
+.img__tab3 {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    transform: translate(168px, -240px);
+}
+
+.img__tab4 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: translate(163px, -240px);
+}
+
+.btn__container-2 {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: 14rem;
+    left: 10px;
+}
+
+.btn {
+    display: block;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    border: none;
+    background-color: transparent;
+    width: 270px;
+    height: 51px;
+    border-radius: 10px;
+}
+
+.btn__bckg {
+    color: black;
+    font-weight: bold;
+}
+
+.btn .btn-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 51px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-border rect {
+    fill: transparent;
+    height: 100%;
+    width: 100%;
+    stroke-dasharray: 650;
+
+}
+
+.btn:not(.btn-prev, .form__btn, .btn-forward):hover .btn-border rect {
+    animation: btnBorderAnimation 2s ease-in-out infinite;
+}
+
+.btn-forward:hover .icon-arrow_forward {
+    animation: arrowForwardBrands 2s ease-in-out infinite;
+}
+
+.btn__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__icon {
+    stroke: #fff;
+    height: 18px;
+    width: 12px;
+
+}
+
+.icon-arrow_forward {
+    margin-left: 16px;
+}
+
+@keyframes arrowForwardBrands {
+    0% {
+
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* section-2 */
+
+.choice {
+    background: #1E1E1E;
+    margin-top: -30rem;
+    margin-bottom: -46rem;
+}
+
+.dark__container {
+    background-image: url(/images/logo/logo3.png);
+    background-size: 49%;
+    background-position: top 5% right -12%;
+    background-repeat: no-repeat;
+}
+
+
+.text__content {
+    font-weight: 300
+}
+
+.descr__logo {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container__block-1 {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background: linear-gradient(42deg, rgb(87 87 87 / 77%) -19.992%, rgba(255, 255, 255, 0) 96.966%);
+
+}
+
+.container__block-1::before {
+    content: "Voyah Free DNA";
+    position: absolute;
+    text-align: left;
+    bottom: 42px;
+    left: 44px;
+    color: var(--dark-color);
+    font-size: 42px;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.img__car1 {
+    position: relative;
+}
+
+.word__text::after {
+    content: "Voyah";
+    position: absolute;
+    top: 23px;
+    right: 28rem;
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.container__modal-btn {
+    padding-top: 40px;
+}
+
+.container__block-car {
+    display: flex;
+    justify-content: right;
+    position: relative;
+    bottom: 314px;
+    left: 4px;
+}
+
+.descr__text-white_2::before {
+    content: "Zhuiguang";
+    position: absolute;
+    bottom: 34px;
+    right: 35%;
+    color: var(--white-color);
+    font-size: 35px;
+    font-weight: 400;
+    z-index: 1;
+}
+
+.descr__text-white_3::before {
+    content: "Dreamer";
+    position: absolute;
+    bottom: 31px;
+    right: 12%;
+    color: var(--white-color);
+    font-size: 35px;
+    font-weight: 400;
+    z-index: 1;
+}
+
+.img__car3 {
+    position: relative;
+    right: 4px;
+}
+
+/* block-2 */
+
+.content__article-2 {
+    position: relative;
+    bottom: 16rem;
+    z-index: 1;
+}
+
+.text::after {
+    content: "Zeekr";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 26px 461px;
+}
+
+.block-2::before {
+    content: "Zeekr X";
+    position: absolute;
+    text-align: left;
+    bottom: 42px;
+    left: 44px;
+}
+
+.container__block-car-2 {
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+.container__block-car-2 p {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+    color: var(--white-color);
+}
+.text__001 {
+    transform: translate(37rem, -24rem);
+}
+.text__009 {
+    transform: translate(54rem, -46rem);
+}
+
+/* .text-5::before {
+    content: "001";
+    position: absolute;
+    bottom: 34px;
+    right: 44%;
+    font-weight: 500;
+}
+
+.text-6::before {
+    content: "009";
+    position: absolute;
+    bottom: 34px;
+    right: 19%;
+    font-weight: 500;
+} */
+
+
+/* SECTION -3 */
+.main__cars {
+    background: #1E1E1E;
+    position: relative;
+    bottom: 23rem;
+}
+
+
+.block__main-cars-img {
+    display: flex;
+    background: linear-gradient(42deg, rgb(87 87 87 / 77%) -19.992%, rgba(255, 255, 255, 0) 96.966%);
+}
+
+.btn__top {
+    position: relative;
+    top: -8rem;
+    left: 122px;
+}
+
+.block__main-cars__btn {
+    position: absolute;
+    top: 315px;
+    right: 0;
+    width: 38%;
+}
+
+.descr {
+    display: flex;
+    color: var(--white-color);
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.descr__text-1::before {
+    content: "Lixiang i7";
+    position: absolute;
+ 
+    transform: translate(-238%, 10rem);
+}
+
+.descr__text-3::before {
+    content: "Zeekr 007";
+    position: absolute;
+
+    transform: translate(-21rem, 10rem);
+}
+
+.descr__text-2::before {
+    content: "Lixiang i9";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(13rem, 36rem);
+    z-index: 1;
+}
+
+.descr__text-4::before {
+    content: "Hongqi H5";
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
+    right: 0;
+    transform: translate(-44rem, -22rem);
+
+}
+
+.descr__text-5::before {
+    content: "Aito M5";
+    position: absolute;
+    transform: translate(49rem, -25rem);
+}
+
+
+/* SECTION */
+
+.exclusive__cars {
+    background: #1E1E1E;
+    position: relative;
+    bottom: 48rem;
+    padding-bottom: 30px;
+
+}
+
+.block__exclusive-cars {
+    background: linear-gradient(42deg, rgb(87 87 87 / 77%) -19.992%, rgba(255, 255, 255, 0) 96.966%);
+
+}
+
+.descr__title-1::before {
+    content: "HONGQI E-HS9";
+    position: absolute;
+    transform: translate(-196%, 74%);
+}
+
+.descr__title-2::before {
+    content: "BYD Yangwang U8";
+    position: absolute;
+    transform: translate(-155%, 476%);
+}
+
+.descr__title-3::before {
+    content: "TANK 500";
+    position: absolute;
+    transform: translate(-239%, 476%);
+}
+
+
+/* ELECTRO CAR */
+
+.electro__cars {
+    color: var(--white-color);
+    position: relative;
+    bottom: 48rem;
+
+}
+
+.block-container__img {
+    width: 100%;
+    height: 100%;
+    position: relative
+}
+
+.block-container__img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000070;
+    opacity: 0.5;
+}
+
+.block-container__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.block__content {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 81%;
+    height: 100%;
+}
+
+.block__setting {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.block__setting img {
+    transform: translate(114px, 100px);
+}
+
+
+.block__button img {
+    transform: translate(68px, 65px);
+}
+.container__btn {
+    display: flex;
+
+}
+
+.btn__long {
+    display: block;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 25px;
+    border: none;
+    background-color: transparent;
+    width: 720px;
+    height: 107px;
+    border-radius: 20px;
+    transform: translate(24px, 1px);
+}
+.btn__long .btn-border__long {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 720px;
+    height: 108px;
+ }
+
+
+ .btn-border__long rect {
+    fill: transparent;
+    height: 100%;
+    width: 100%;
+    stroke-dasharray: 1605;
+    stroke-dashoffset: 500;
+    animation: animateBorder 2s linear forwards;
+  }
+  
+  @keyframes animateBorder {
+    0% {
+      stroke-dashoffset: 500;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+.posts1::before {
+    content: "Предоставление современных и экологически чистых решений в области транспорта";
+    width: 368px;
+    height: 11%;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(139 139 139 / 27%), rgb(24 24 24 / 79%));
+    transform: translate(148px, 377px);
+    padding-top: 13px;
+    padding-left: 22px;
+    padding-right: 10px;
+}
+
+.title__posts-1 {
+    width: 1%;
+    transform: translate(170px, 101px);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.posts2::before {
+    content: "Электро-и гибридные автомобили — шаг в будущее и выгодное вложение в собственные финансы благодаря экономии на топливе и обслуживании";
+    width: 730px;
+    height: 12%;
+    font-size: 16px;
+    text-align: justify;
+    position: absolute;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(139 139 139 / 27%), rgb(24 24 24 / 79%));
+    transform: translate(576px, 122px);
+    padding-top: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.title__posts-2 {
+    display: flex;
+    width: 32%;
+    transform: translate(585px, 68px);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.posts3::before {
+    content: "Мы стремимся снизить воздействие на окружающую среду, предлагая клиентам электромобили, которые работают на чистой энергии. Наш выбор транспортных средств способствует уменьшению выбросов вредных веществ и содействует сохранению природы";
+    width: 98%;
+    height: 11%;
+    font-size: 16px;
+    position: absolute;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(139 139 139 / 27%), rgb(24 24 24 / 79%));
+    transform: translate(147px, 264px);
+    padding-top: 21px;
+    padding-left: 14px;
+}
+
+.title__posts-3 {
+    width: 41%;
+    transform: translate(171px, 216px);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* PRICE */
+.request {
+    position: relative;
+    padding: 87px 0;
+    background: linear-gradient(to left, #80808094, white);
+    margin-top: -48rem;
+}
+
+
+.request__img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 720px;
+    transform: translate(48rem, 19rem);
+}
+
+.request__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.request__container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 40px;
+    max-width: 1140px;
+}
+
+.request__left,
+.request__right {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.request__left {
+    position: relative;
+    max-width: 495px;
+}
+
+.request__right {
+    max-width: 460px;
+}
+
+.request__descr {
+    position: relative;
+    text-align: right;
+    padding: 31px 23px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+    z-index: 10;
+    color: white;
+}
+
+.request__descr::before {
+    content: url(/images/logo/ECOMOBIL.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 207px 0px 60px 44px;
+} 
+
+
+.form {
+    max-width: 460px;
+    width: 100%;
+}
+
+
+.form__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+
+.form__box {
+    padding: 44px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 54px;
+    gap: 17px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 12px 0px rgb(131, 124, 117);
+    background: linear-gradient(290deg, rgb(94 87 87) 4.821%, rgb(88 82 82 / 0%) 115.075%);
+    color: var(--white-color);
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__item label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.form__item input {
+    min-height: 78px;
+    box-sizing: border-box;
+    border: 4px solid rgba(255, 255, 255, 0.29);
+    border-radius: 20px;
+    background: rgb(32, 32, 32);
+}
+
+.form__btn .btn-border,
+.form__btn {
+    width: 100%;
+    color: var(--dark-color);
+}
+
+.request__descr .btn-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.request .btn-border rect,
+.form__btn .btn-border rect {
+    stroke-dasharray: 1000;
+
+}
+
+.form__btn:hover .btn-border rect {
+    animation: btnFormBorderAnimation 2s ease-in-out infinite
+}
+
+@keyframes btnFormBorderAnimation {
+    0% {
+        stroke-dashoffset: 2000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+     /* // reviews */
+
+.reviews {
+    position: relative;
+    background: #181818;
+    padding: 40px 136px 194px 129px;
+}
+
+.reviews__container {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-left: 27px;
+    padding-top: 64px;
+    display: flex;
+}
+.btn__small {
+    display: block;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    width: 30px;
+    height: 51px;
+}
+ .btn__small .btn-border__back,
+ .btn__small .btn-border__forward {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 51px;
+ }
+
+ .btn__small:hover,
+ .btn__gray:hover,
+ .btn__long:hover {
+    cursor: pointer;
+}
+
+.btn-border__back rect,
+.btn-border__forward rect,
+.btn-border__gray rect {
+    fill: transparent;
+    height: 100%;
+    width: 100%;
+    stroke-dasharray: 500;
+}
+
+.btn__small:not(.btn-prev, .form__btn, .btn-forward):hover .btn-border__forward rect,
+.btn__small:not(.btn-prev, .form__btn, .btn-back):hover .btn-border__back rect,
+.btn__gray:not(.btn-prev, .form__btn, .btn-linear):hover .btn-border__gray rect,
+.btn__long:not(.btn-prev, .form__btn, .btn-forward):hover .btn-border__long rect {
+    animation: btnBorderAnimation 2s ease-in-out infinite;
+}
+.btn-back:hover .icon-arrow_back,
+.btn-forward:hover .icon-arrow_forward {
+    animation: arrowForwardBrands 2s ease-in-out infinite;
+}
+
+.reviews__block-item {
+    display: flex;
+    flex-direction: row;
+    padding-top: 36px;
+    gap: 16px;
+
+}
+
+.reviews__block-item1,
+.reviews__block-item2,
+.reviews__block-item3 {
+    display: block;
+    width: 368px;
+    height: 360px;
+    /* background: gray; */
+    background: linear-gradient(to bottom, transparent, transparent), gray;
+    border-bottom-left-radius: 33%;
+    border-bottom-right-radius: 33%;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 33%;
+}
+
+.reviews__block-item1::before {
+    content: "";
+    position: absolute;
+    top: 336px;
+    bottom: 16px;
+    left: 188px;
+    right: 6px;
+    display: block;
+    width: 364px;
+    height: 381px;
+    background: linear-gradient(to right, rgb(255 255 255 / 0%), rgb(255 255 255 / 61%));
+    border-bottom-left-radius: 26%;
+    border-bottom-right-radius: 25%;
+    border-top-left-radius: 13%;
+    border-top-right-radius: 31%;
+  }
+
+.reviews__block-item2::before {
+    content: "";
+    position: absolute;
+    top: 336px;
+    bottom: 16px;
+    left: 573px;
+    right: 6px;
+    display: block;
+    width: 364px;
+    height: 381px;
+    background: linear-gradient(to right, rgb(255 255 255 / 0%), rgb(255 255 255 / 61%));
+    border-bottom-left-radius: 26%;
+    border-bottom-right-radius: 25%;
+    border-top-left-radius: 13%;
+    border-top-right-radius: 31%;
+  }
+.reviews__block-item3::before {
+    content: "";
+    position: absolute;
+    top: 337px;
+    bottom: 16px;
+    left: 959px;
+    right: 6px;
+    display: block;
+    width: 364px;
+    height: 381px;
+    background: linear-gradient(to right, rgb(255 255 255 / 0%), rgb(255 255 255 / 61%));
+    border-bottom-left-radius: 26%;
+    border-bottom-right-radius: 25%;
+    border-top-left-radius: 13%;
+    border-top-right-radius: 31%;
+  }
+
+ .header__block1::before {
+    content: "Имя";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translate(186px, 234px);
+    position: absolute;
+    width: 364px;
+    height: 102px;
+    display: block;
+    border: none;
+    border-bottom-left-radius: 0% 20%;
+    border-bottom-right-radius: 0% 20%;
+    border-top-left-radius: 47% 176%;
+    border-top-right-radius: 72% 175%;
+    background: linear-gradient(to right, rgb(255 255 255 / 68%), #181818f5);
+    z-index: 9999;
+    padding: 50px 50px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1px;
+}
+ .header__block2::before {
+    content: "Имя";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translate(571px, 234px);
+    position: absolute;
+    width: 364px;
+    height: 102px;
+    display: block;
+    border: none;
+    border-bottom-left-radius: 0% 20%;
+    border-bottom-right-radius: 0% 20%;
+    border-top-left-radius: 47% 176%;
+    border-top-right-radius: 72% 175%;
+    background: linear-gradient(to right, rgb(255 255 255 / 68%), #181818f5);
+    z-index: 9999;
+    padding: 50px 50px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1px;
+}
+ .header__block3::before {
+    content: "Имя";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translate(955px, 234px);
+    position: absolute;
+    width: 364px;
+    height: 102px;
+    display: block;
+    border: none;
+    border-bottom-left-radius: 0% 20%;
+    border-bottom-right-radius: 0% 20%;
+    border-top-left-radius: 47% 176%;
+    border-top-right-radius: 72% 175%;
+    background: linear-gradient(to right, rgb(255 255 255 / 68%), #181818f5);
+    z-index: 9999;
+    padding: 50px 50px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1px;
+}
+
+.container__small-btn__back {
+    transform: translate(-35px, 153px);
+}
+.container__small-btn__forward {
+    transform: translate(30px, 153px);
+}
+.descr-text {
+    padding: 27px 42px;
+    line-height: 1;
+}
+
+.button__container {
+display: flex;
+justify-content: end;
+transform: translate(0px, 116px);
+}
+
+.btn__gray {
+    display: block;
+    position: relative;
+    border: none;
+    background: linear-gradient(to right, rgb(85 85 85 / 46%), rgb(85 85 85 / 78%));
+    width: 174px;
+    height: 51px;
+    color: var(--white-color);
+    border-radius: 10px;
+}
+
+.btn__gray .btn-border__gray {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 174px;
+    height: 51px;
+ }
