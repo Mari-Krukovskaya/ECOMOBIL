@@ -17,7 +17,7 @@ body {
     padding: 0 16px;
 }
 
-.advantage {
+/* .advantage {
     position: relative;
     padding: 47px 0 111px;
     background-color: #000;
@@ -194,7 +194,7 @@ body {
     .advantage__item-descr {
         gap: 26px;
     }
-}
+} */
 
 
 /* section-1 */
@@ -211,16 +211,16 @@ body {
 .interior__container {
     margin-bottom: 0px;
     padding-bottom: 75px;
-}
+} 
 
-/* 
+
 .interior__content {
     max-width: 1172px;
     margin: 0 auto 75px;
     padding: 0px 16px;
     padding-left: 50px;
     margin-bottom: 120px;
-} */
+}
 
 .exterior__title,
 .interior__title {
@@ -422,7 +422,7 @@ body {
         max-height: 384px;
         flex-wrap: wrap;
     }
-}
+ } 
 
 @media(max-width: 640px) {
     .exterior {
@@ -743,6 +743,13 @@ body {
 .text__black {
     color: var(--dark-color);
 }
+
+.choice__block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 580px;
+}
 .btn__choice-descr {
 padding: 30px 20px;
 }
@@ -780,16 +787,17 @@ line-height: 100%;
     line-height: 120%;
 }
 
-@media(max-width: 999px) {
-
+/* @media(max-width: 999px) {
+    .container {
+        max-width: 640px;
+        margin: 0 auto 40px;
+    }
     .choice {
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    /* .choice__content {
-
-    } */
-    .title__text {
+    
+     .title__text {
         padding-bottom: 40px;
         padding-top: 40px;
     }
@@ -848,12 +856,12 @@ line-height: 100%;
 .group__image-main:nth-child(2) .block__main-img:nth-child(2) img {
     width: 295px;
 }
-}
+} */
+ 
 
 
 /* SECTION -3  MAIN*/
-
-.container__main,
+/* .container__main,
 .exclusive__container {
     background: #1E1E1E;
     margin-top: -75px;
@@ -885,11 +893,7 @@ line-height: 100%;
     margin-top: -54px;
 }
 
-/* .main__box-btn {
-    display: flex;
-    flex-direction: column;
-    margin-top: -394px;
-} */
+
 
 .main__block,
 .exclusive__block {
@@ -921,6 +925,10 @@ line-height: 100%;
 }
 
 @media(max-width: 999px) {
+    .container {
+        max-width: 640px;
+        margin: 0 auto 40px;
+    }
     .container__main,
 .exclusive__container {
     padding: 0 80px;
@@ -982,11 +990,11 @@ line-height: 120px;
 
 }
 
-}
+}  */
 
 
 /* SECTION  EXCLUS*/
-.block__exclusive-img,
+/* .block__exclusive-img,
 .exclusive__image {
     position: relative;
 }
@@ -1003,7 +1011,7 @@ line-height: 120px;
     left: 0;
     padding: 45px;
 
-}
+} */
 
 /* ELECTRO CAR */
 
@@ -1040,8 +1048,9 @@ line-height: 120px;
 .electro__title {
     position: relative;
     display: flex;
-    padding: 29px 82px;
-    color: var(--white-color);
+    align-items: center;
+    padding: 30px 82px;
+    color: rgb(255, 255, 255);
     font-weight: 400;
     font-size: 40px;
     line-height: 120%;
@@ -1050,236 +1059,137 @@ line-height: 120px;
 .electro__btn {
     width: 720px;
     height: 107px;
-    margin-left: -86px;
-    margin-bottom: 101px
+    margin-left: -79px;
+    margin-bottom: 101px;
 }
-.electro__btn .btn-border {
-    width: 100%;
-    height: 100%;
-}
-.btn .btn-border, .electro__btn .btn-border {
+
+ .electro__btn .btn-border {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
 }
 .electro__btn .btn-border rect {
     stroke-dasharray: 2000;
 }
 
 .container__block-posts {
-position: relative;
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
 }
 
 .group__block-posts {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 54px;
+    align-items: end;
 }
 
-.posts__item {
-
-}
 
 .posts__title {
     font-weight: 500;
     font-size: 24px;
     line-height: 120%;
-    padding-bottom: 20px;
+    padding: 20px 14px;
 }
 .block__posts-descr {
     stroke: rgb(255, 255, 255);
-    background-image: linear-gradient(to right, rgb(255 255 255 / 36%), rgb(0 0 0));
+    background: linear-gradient(177deg, rgb(126 125 125 / 74%), #000000f5);
     border-radius: 20px;
     padding: 20px;
+    display: flex;
+    text-align: justify;
 }
 
 .posts__descr {
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 120%;
 }
 .group__block-posts .posts__item:nth-child(2) {
-    padding: 30px 54px;
+    width: 100%;
+    max-width: 730px;
 }
 .group__block-posts .posts__item:nth-child(1) {
-    margin-left: -32px;
+    width: 100%;
+    max-width: 368px;
+}
+
+.group__block-posts .posts__item:nth-child(2) .block__posts-descr:nth-child(2) .posts__descr {
+    margin-bottom: 20px;
+}
+.posts__item-bottom .block__posts-descr .posts__descr {
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .posts__item-bottom {
-    padding-top: 25px;
-    margin-right: 57px;
-}
+    width: 100%;
+    max-width: 1152px;
+} 
 
    
-
-
-
-
-/* .electro__cars {
-    color: var(--white-color);
-
-}
-
-.block-container__img {
-    width: 100%;
-    height: 100%;
-    position: relative
-}
-
-.block-container__img::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #00000070;
-    opacity: 0.5;
-}
-
-.block-container__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.block__content {
-    position: absolute;
-    top: -8px;
-    left: 0;
-    width: 81%;
-    height: 100%;
-}
-
-.block__setting {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.block__setting img {
-    transform: translate(114px, 100px);
-}
-
-
-.block__button img {
-    transform: translate(68px, 65px);
-}
-
-.container__btn {
-    display: flex;
-
-}
-
-.btn__long {
-    display: block;
-    position: relative;
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 25px;
-    border: none;
-    background-color: transparent;
-    width: 720px;
-    height: 107px;
-    border-radius: 20px;
-    transform: translate(24px, 1px);
-}
-
-.btn__long .btn-border__long {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 720px;
-    height: 108px;
-}
-
-
-.btn-border__long rect {
-    fill: transparent;
-    height: 100%;
-    width: 100%;
-    stroke-dasharray: 1605;
-    stroke-dashoffset: 500;
-    animation: animateBorder 2s linear forwards;
-}
-
-@keyframes animateBorder {
-    0% {
-        stroke-dashoffset: 500;
+@media(max-width: 999px) {
+    .container {
+        max-width: 640px;
+        padding: 0 16px;
+    }
+    .electro__cars {
+       padding: 40px 0;
     }
 
-    100% {
-        stroke-dashoffset: 0;
+     .electro__btn {
+        max-width: 419px;
+        width: 100%;
+        margin-left: -35px;
     }
+    .electro__btn .btn-border rect {
+        stroke-dasharray: 2019;
+    }
+    .electro__title {
+    line-height: 100%;
+    padding: 14px 17px;
+    }
+    .container__block-posts {
+        /* margin-top: -92px; */
+    }
+   .group__block-posts {
+    gap: 18px;
+   }
+
+   .group__block-posts .posts__item:nth-child(1) {
+    width: 100%;
+    max-width: 277px;
+}
+   .posts__title {
+    padding: 20px;
+
+   }
+   .block__posts-descr {
+    text-align: left;
+   }
+   .group__block-posts .posts__item:nth-child(2) {
+    width: 100%;
+    max-width: 334px;
+}
+.group__block-posts .posts__item:nth-child(2) .block__posts-descr:nth-child(2) .posts__descr {
+     margin-bottom: -16px;
+    padding-right: 19px;
+}
+.posts__item-bottom {
+    width: 100%;
+    max-width: 629px;
+} 
+.posts__item-bottom .posts__title {
+    width: 83%;
 }
 
-.posts1::before {
-    content: "Предоставление современных и экологически чистых решений в области транспорта";
-    width: 368px;
-    height: 11%;
-    font-size: 16px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 20px;
-    background: linear-gradient(to right, rgb(139 139 139 / 27%), rgb(24 24 24 / 79%));
-    transform: translate(148px, 377px);
-    padding-top: 13px;
-    padding-left: 22px;
-    padding-right: 10px;
 }
-
-.title__posts-1 {
-    width: 1%;
-    transform: translate(170px, 101px);
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.posts2::before {
-    content: "Электро-и гибридные автомобили — шаг в будущее и выгодное вложение в собственные финансы благодаря экономии на топливе и обслуживании";
-    width: 730px;
-    height: 12%;
-    font-size: 16px;
-    text-align: justify;
-    position: absolute;
-    border-radius: 20px;
-    background: linear-gradient(to right, rgb(139 139 139 / 27%), rgb(24 24 24 / 79%));
-    transform: translate(576px, 122px);
-    padding-top: 24px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.title__posts-2 {
-    display: flex;
-    width: 32%;
-    transform: translate(585px, 68px);
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.posts3::before {
-    content: "Мы стремимся снизить воздействие на окружающую среду, предлагая клиентам электромобили, которые работают на чистой энергии. Наш выбор транспортных средств способствует уменьшению выбросов вредных веществ и содействует сохранению природы";
-    width: 98%;
-    height: 11%;
-    font-size: 16px;
-    position: absolute;
-    border-radius: 20px;
-    background: linear-gradient(to right, rgb(139 139 139 / 27%), rgb(24 24 24 / 79%));
-    transform: translate(147px, 264px);
-    padding-top: 21px;
-    padding-left: 14px;
-}
-
-.title__posts-3 {
-    width: 41%;
-    transform: translate(171px, 216px);
-    font-size: 24px;
-    font-weight: 400;
-} */
 
 /* PRICE */
-.request {
+/* .request {
     position: relative;
     padding: 87px 0;
     background: linear-gradient(to left, #80808094, white);
@@ -1426,11 +1336,11 @@ position: relative;
     100% {
         stroke-dashoffset: 0;
     }
-}
+} */
 
 /* // reviews */
 
-.reviews {
+/* .reviews {
     position: relative;
     background: #181818;
     padding: 40px 136px 194px 129px;
@@ -1503,7 +1413,6 @@ position: relative;
     display: block;
     width: 368px;
     height: 360px;
-    /* background: gray; */
     background: linear-gradient(to bottom, transparent, transparent), gray;
     border-bottom-left-radius: 33%;
     border-bottom-right-radius: 33%;
@@ -1670,4 +1579,4 @@ position: relative;
     left: 0;
     width: 174px;
     height: 51px;
-}
+} */
