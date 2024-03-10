@@ -17,7 +17,7 @@ body {
     padding: 0 16px;
 }
 
-/* .advantage {
+.advantage {
     position: relative;
     padding: 47px 0 111px;
     background-color: #000;
@@ -194,18 +194,19 @@ body {
     .advantage__item-descr {
         gap: 26px;
     }
-} */
+} 
 
 
-/* section-1 */
-.exterior {
+/* section-1
+
+ /* .exterior {
     padding-top: 75px;
 }
 
-.exterior,
+/* .exterior,
 .interior {
     background: linear-gradient(to right, #80808094, white);
-}
+} */
 
 .exterior__container,
 .interior__container {
@@ -390,7 +391,6 @@ body {
     .grouped-box {
         height: 189px;
         width: 100%;
-        /* position: relative; */
     }
 
     .grouped-box {
@@ -406,7 +406,6 @@ body {
     }
 
     .grouped-box .grouped-photo:first-child {
-        /* position: absolute; */
         width: calc((100% / 3)*2);
     }
 
@@ -571,18 +570,17 @@ body {
 
 .btn-prev .btn-border rect {
     stroke-dasharray: 500;
-}
+} */
 
 .btn:not(.btn-prev, .form__btn, .slider__button-next, .slider__button-prev, .tab__btn):hover .btn-border rect {
     animation: btnBorderAnimation 2s ease-in-out infinite;
-}
+} 
+ .btn-prev:hover .btn-border rect {
+     /* animation: btnBorderAnimation 2s ease-in-out infinite; */
+     /* animation-direction: reverse;  */
+ }
 
-/* .btn-prev:hover .btn-border rect {
-    /* animation: btnBorderAnimation 2s ease-in-out infinite;
-    /* animation-direction: reverse; */
-/* } */ */
-
-.btn-prev:hover .icon-arrow_back {
+ .btn-prev:hover .icon-arrow_back {
     animation: arrowBack 2s ease-in-out infinite;
 }
 
@@ -667,7 +665,7 @@ body {
     100% {
         stroke-dashoffset: 0;
     }
-}
+} 
 
 
 /* Choice  */
@@ -1022,6 +1020,9 @@ line-height: 120px;
 }
 .eclectro__content {
     margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+    
 }
 
 .electro__img-box {
@@ -1056,7 +1057,7 @@ line-height: 120px;
     line-height: 120%;
 }
 
-.electro__btn {
+ .electro__btn {
     width: 720px;
     height: 107px;
     margin-left: -79px;
@@ -1096,7 +1097,7 @@ line-height: 120px;
 }
 .block__posts-descr {
     stroke: rgb(255, 255, 255);
-    background: linear-gradient(177deg, rgb(126 125 125 / 74%), #000000f5);
+    background: linear-gradient(90.00deg, rgba(140, 139, 139, 0.58) 20.786%,rgba(0, 0, 0, 0.46) 82.64%);
     border-radius: 20px;
     padding: 20px;
     display: flex;
@@ -1185,6 +1186,27 @@ line-height: 120px;
 .posts__item-bottom .posts__title {
     width: 83%;
 }
+
+}
+@media (max-width: 640px) {
+    .electro__cars {
+        padding: 16px 16px 48px 16px;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .electro__img {
+        object-fit: contain;
+        object-position: top;
+    }
+    .electro__title {
+        font-size: 20px;
+        
+    }
+    .electro__btn {
+        max-width: 328px;
+        height: 40px;
+    }
 
 }
 
