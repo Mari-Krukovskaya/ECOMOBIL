@@ -5,20 +5,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./fonts/stylesheet.css" />
-    <Link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <Link rel="stylesheet" href="/css/components/reset.css" />
+    <link rel="stylesheet" href="/css/components/style.css" />
+    <link rel="stylesheet" href="/css/components/carousel.css" />
     <title>ECOMOBIL</title>
 </head>
 
 <body>
-    <main class="main">
-        <!-- <div class="advantage">
+    <div class="main__container">
+        <header class="header">
+            <div class="header__container">
+                <div class="logo__box">
+                    <a href="/" class="logo__link">
+                        <img src="images/logo/ECOMOBIL.svg" alt="Ecomobil" class="logo__img">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul id="menu-main" class="nav__list">
+                        <li id="menu-item-228"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-228"><a
+                                href="https://ecomobilcars.ru/brands/">Авто
+                                <svg class="btn-border" style="opacity: 0;" widthofcontainer heightofcontainer>
+                                    <linearGradient id="linear-gradientMenu1" x1="0%" y1="50%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
+                                        <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
+                                    </linearGradient>
+                                    <rect stroke-width="1.5" stroke="url(#linear-gradientMenu1)" rx="0" ry="0" x="0"
+                                        y="0" width="100%" height="100%" rx="10px" ry="10px"></rect>
+                                </svg>
+                            </a>
+                        </li>
+                        <li id="menu-item-83"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a
+                                href="https://ecomobilcars.ru/about/">О компании
+                                <svg class="btn-border" style="opacity: 0;" widthofcontainer heightofcontainer>
+                                    <linearGradient id="linear-gradientMenu2" x1="0%" y1="50%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
+                                        <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
+                                    </linearGradient>
+                                    <rect stroke-width="1.5" stroke="url(#linear-gradientMenu2)" rx="0" ry="0" x="0"
+                                        y="0" width="100%" height="100%" rx="10px" ry="10px"></rect>
+                                </svg>
+                            </a>
+                        </li>
+                        <li id="menu-item-116"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-116"><a
+                                href="https://ecomobilcars.ru/articles/">Статьи
+                                <svg class="btn-border" style="opacity: 0;" widthofcontainer heightofcontainer>
+                                    <linearGradient id="linear-gradientMenu3" x1="0%" y1="50%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
+                                        <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
+                                    </linearGradient>
+                                    <rect stroke-width="1.5" stroke="url(#linear-gradientMenu3)" rx="0" ry="0" x="0"
+                                        y="0" width="100%" height="100%" rx="10px" ry="10px"></rect>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav> <a href="tel:79999999999" class="header__contact">+7 (999) 999-99-99</a>
+                <div class="header__mobile">
+                    <span class="header__mobile-text">Меню</span>
+                    <div class="mobile__burger">
+                        <svg class="burger__icon">
+                            <use xlink:href="/wp-content/themes/Ecomobil/assets/images//sprite.svg#burger"></use>
+                        </svg>
+                    </div>
+                    <div class="mobile__nav-box">
+                        <nav class="header__nav">
+                            <ul id="menu-main-1" class="nav__list">
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-228"><a
+                                        href="https://ecomobilcars.ru/brands/">Авто
+                                        <svg class="btn-border" style="opacity: 0;" widthofcontainer heightofcontainer>
+                                            <linearGradient id="linear-gradientMenu4" x1="0%" y1="50%" x2="0%"
+                                                y2="100%">
+                                                <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
+                                                <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
+                                            </linearGradient>
+                                            <rect stroke-width="1.5" stroke="url(#linear-gradientMenu4)" rx="0" ry="0"
+                                                x="0" y="0" width="100%" height="100%" rx="10px" ry="10px"></rect>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a
+                                        href="https://ecomobilcars.ru/about/">О компании
+                                        <svg class="btn-border" style="opacity: 0;" widthofcontainer heightofcontainer>
+                                            <linearGradient id="linear-gradientMenu5" x1="0%" y1="50%" x2="0%"
+                                                y2="100%">
+                                                <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
+                                                <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
+                                            </linearGradient>
+                                            <rect stroke-width="1.5" stroke="url(#linear-gradientMenu5)" rx="0" ry="0"
+                                                x="0" y="0" width="100%" height="100%" rx="10px" ry="10px"></rect>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-116"><a
+                                        href="https://ecomobilcars.ru/articles/">Статьи
+                                        <svg class="btn-border" style="opacity: 0;" widthofcontainer heightofcontainer>
+                                            <linearGradient id="linear-gradientMenu6" x1="0%" y1="50%" x2="0%"
+                                                y2="100%">
+                                                <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
+                                                <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
+                                            </linearGradient>
+                                            <rect stroke-width="1.5" stroke="url(#linear-gradientMenu6)" rx="0" ry="0"
+                                                x="0" y="0" width="100%" height="100%" rx="10px" ry="10px"></rect>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a href="tel:79999999999" class="header__contact">+7 (999) 999-99-99</a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <div class="banner main__banner">
+            <picture>
+                <source srcset="/images/main__banner.webp" media="(min-width: 1000px)" class="banner__img">
+                <source srcset="images/main-banner_tablet.webp" media="(min-width: 641px)" class="banner__img">
+                <source srcset="/images/main-banner_mobile.webp" media="(max-width: 640px)" class="banner__img">
+                <img src="/wp-content/themes/Ecomobil/assets/images/" alt="banner about " class="banner__img">
+            </picture>
+        </div>
+        <div class="advantage">
             <div class="advantage__img-box">
-                <img src="/images/e-tron.png" alt="request" class="advantage__img">
+                <img src="/images/e-tron.webp" alt="request" class="advantage__img">
             </div>
             <div class="advantage__container container">
                 <div class="advantage__heading">
-                    <a href="/" class="logo__link"><img src="images/logo/ECOMOBIL.png" alt="logo"
+                    <a href="/" class="logo__link"><img src="images/logo/ECOMOBIL.svg" alt="logo"
                             class="advantage__logo"></a>
                     <div class="advantage__title card_border">
                         <svg class="btn-border">
@@ -147,596 +263,628 @@
                     </div>
                 </div>
             </div>
-        </div> -->
-
-        <!-- 1 section-exterior -->
-        <!-- <div class="exterior">
-            <div class="exterior__container container">
-                <h2 class="exterior__title">Экстерьер</h2>
-                <div class="tab">
-                    <div class="btn__container btn__container-tab">
-                        <button class="main__btn tab__btn btn active" data-tab="ext-zeekr">
-                            <svg class="btn-border">
-                                <linearGradient id="linear-gradient-dark1" x1="30%" y1="40%" x2="70%" y2="0%">
-                                    <stop offset="0%" stop-color="rgba(0, 0, 0, 0)" />
-                                    <stop offset="100%" stop-color="rgba(0, 0, 0, .5)" />
-                                </linearGradient>
-                                <rect stroke-width="2" stroke="url(#linear-gradient-dark1)" rx="10px" ry="10px" x="0"
-                                    y="0" style="width: 100%;" />
-                            </svg>
-                            Zeekr 007</button>
-                        <button type="button" class="main__btn tab__btn btn " data-tab="ext-lotus">
-                            <svg class="btn-border">
-                                <linearGradient id="linear-gradient-dark2" x1="30%" y1="40%" x2="70%" y2="0%">
-                                    <stop offset="0%" stop-color="rgba(0, 0, 0, 0)" />
-                                    <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
-                                </linearGradient>
-                                <rect stroke-width="2" stroke="url(#linear-gradient-dark2)" rx="10px" ry="10px" x="0"
-                                    y="0" style="width: 100%;" />
-                            </svg>
-                            Lotus Eletre</button>
-                        <button type="button" class="main__btn tab__btn btn " data-tab="ext-huawei">
-                            <svg class="btn-border">
-                                <linearGradient id="linear-gradient-dark3" x1="30%" y1="40%" x2="70%" y2="0%">
-                                    <stop offset="0%" stop-color="rgba(0, 0, 0, 0)" />
-                                    <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
-                                </linearGradient>
-                                <rect stroke-width="2" stroke="url(#linear-gradient-dark3)" rx="10px" ry="10px" x="0"
-                                    y="0" style="width: 100%;" />
-                            </svg>
-                            Huawei Aito
-                            M9</button>
-                    </div>
-                    <div id="ext-zeekr" class="tab-content active">
-                        <div class="tab__content__block">
-                            <div class="photo-container">
-                                <img src="/images/exterior_Zeekr1.png" class="img__tab1 img__tab">
-                            </div>
-
-                            <div class="photo-container grouped">
-                                <div class="grouped-photo">
-                                    <img src="/images/exterior_Zeekr2.png" class="img__tab2 img__tab">
-                                </div>
-                                <div class="grouped-box">
-                                    <div class="grouped-photo">
-                                        <img src="/images/exterior_Zeekr3.png" class="img__tab3 img__tab">
-                                    </div>
-                                    <div class="grouped-photo">
-                                        <img src="/images/exterior_Zeekr4.png" class="img__tab4 img__tab">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn__container-2 btn__bckg">
-                            <a href="http://cx22706.tw1.ru/brands/zeekr/" class="btn btn-forward main__btn_dark">
+        </div>
+        <div class="design">
+            <div class="exterior">
+                <div class="exterior__container container">
+                    <h2 class="exterior__title">Экстерьер</h2>
+                    <div class="tab">
+                        <div class="btn__container btn__container-tab">
+                            <button class="main__btn tab__btn btn active" data-tab="ext-zeekr">
                                 <svg class="btn-border">
-                                    <linearGradient id="linear-gradient-black4" x1="20%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" stop-color="rgba(0, 0, 0, 0)" />
-                                        <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
+                                    <linearGradient id="linear-gradient-tab1" x1="30%" y1="40%" x2="70%" y2="0%">
+                                        <stop offset="0%" stop-color="rgba(0, 0, 0, 0.03)" />
+                                        <stop offset="100%" stop-color="rgba(0, 0, 0, .5)" />
                                     </linearGradient>
-                                    <rect stroke-width="1.5" stroke="url(#linear-gradient-black4)" rx="10px" ry="10px"
-                                        y="0" style="width: 100%;" />
-                                </svg>
-
-                                <div class="btn__inner">
-                                    <span>Все модели</span>
-                                    <svg class="btn__icon icon-arrow_forward" style="stroke: black;">
-                                        <use xlink:href="/images/logo/sprite.svg#arrow_forward"></use>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div id="ext-lotus" class="tab-content">
-                        <div class="tab__content__block">
-                            <div class="photo-container">
-                                <img src="/images/exterior_Lotus1.png" class="img__tab1 img__tab">
-                            </div>
-                            <div class="photo-container grouped">
-                                <div class="grouped-photo">
-                                    <img src="/images/exterior_Lotus2.png" class="img__tab2 img__tab">
-                                </div>
-                                <div class="grouped-box">
-                                    <div class="grouped-photo">
-                                        <img src="/images/exterior_Lotus3.png" class="img__tab3 img__tab">
-                                    </div>
-                                    <div class="grouped-photo">
-                                        <img src="/images/exterior_Lotus4.png" class="img__tab4 img__tab">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn__container-2 btn__bckg">
-                            <a href="http://cx22706.tw1.ru/brands/lotus/" class="btn btn-forward main__btn_dark">
-                                <svg class="btn-border">
-                                    <linearGradient id="linear-gradient-black5" x1="20%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" stop-color="rgba(0, 0, 0, 0)" />
-                                        <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
-                                    </linearGradient>
-                                    <rect stroke-width="1.5" stroke="url(#linear-gradient-black5)" rx="10px" ry="10px"
+                                    <rect stroke-width="2" stroke="url(#linear-gradient-tab1)" rx="10px" ry="10px" x="0"
                                         y="0" width="100%" />
                                 </svg>
-
-                                <div class="btn__inner">
-                                    <span>Все модели</span>
-                                    <svg class="btn__icon icon-arrow_forward" style="stroke: black;">
-                                        <use xlink:href="/images/logo/sprite.svg#arrow_forward"></use>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div id="ext-huawei" class="tab-content">
-                        <div class="tab__content__block">
-                            <div class="photo-container">
-                                <img src="/images/exterior_Huawei1.png" class="img__tab1 img__tab">
-                            </div>
-                            <div class="photo-container grouped">
-                                <div class="grouped-photo">
-                                    <img src="/images/exterior_Huawei2.png" class="img__tab2 img__tab">
-                                </div>
-                                <div class="grouped-box">
-                                    <div class="grouped-photo">
-                                        <img src="/images/exterior_Huawei3.png" class="img__tab3 img__tab">
-                                    </div>
-                                    <div class="grouped-photo">
-                                        <img src="/images/exterior_Huawei4.png" class="img__tab4 img__tab">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn__container-2 btn__bckg">
-                            <a href="#" class="btn btn-forward main__btn_dark6">
+                                Zeekr 009</button>
+                            <button type="button" class="main__btn tab__btn btn " data-tab="ext-lotus">
                                 <svg class="btn-border">
-                                    <linearGradient id="linear-gradient-black3" x1="20%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" stop-color="rgba(0, 0, 0, 0)" />
-                                        <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
+                                    <linearGradient id="linear-gradient-tab2" x1="30%" y1="40%" x2="70%" y2="0%">
+                                        <stop offset="0%" stop-color="rgba(0, 0, 0, 0.03)" />
+                                        <stop offset="100%" stop-color="rgba(0, 0, 0, .5)" />
                                     </linearGradient>
-                                    <rect stroke-width="1.5" stroke="url(#linear-gradient-black6)" rx="10px" ry="10px"
+                                    <rect stroke-width="2" stroke="url(#linear-gradient-tab2)" rx="10px" ry="10px" x="0"
                                         y="0" width="100%" />
                                 </svg>
-
-                                <div class="btn__inner">
-                                    <span>Все модели</span>
-                                    <svg class="btn__icon icon-arrow_forward" style="stroke: black;">
-                                        <use xlink:href="/images/logo/sprite.svg#arrow_forward"></use>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- </div> -->
-        <!-- </div>
-        <div class="interior">
-            <div class="interior__container container">
-                <h2 class="interior__title">Интерьер</h2>
-                <div class="tab">
-                    <div class="btn__container btn__container-tab">
-                        <button class="main__btn tab__btn btn active" data-tab="int-zeekr">
-                            <svg class="btn-border">
-                                <linearGradient id="linear-gradient-dark7" x1="30%" y1="40%" x2="70%" y2="0%">
-                                    <stop offset="0%" stop-color="rgba(0, 0, 0, 0)" />
-                                    <stop offset="100%" stop-color="rgba(0, 0, 0, .5)" />
-                                </linearGradient>
-                                <rect stroke-width="2" stroke="url(#linear-gradient-dark7)" rx="10px" ry="10px" x="0"
-                                    y="0" width="100%" />
-                            </svg>
-                            Zeekr 007</button>
-                        <button type="button" class="main__btn tab__btn btn " data-tab="int-lotus">
-                            <svg class="btn-border">
-                                <linearGradient id="linear-gradient-dark8" x1="30%" y1="40%" x2="70%" y2="0%">
-                                    <stop offset="0%" stop-color="rgba(0, 0, 0, 0)" />
-                                    <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
-                                </linearGradient>
-                                <rect stroke-width="2" stroke="url(#linear-gradient-dark8)" rx="10px" ry="10px" x="0"
-                                    y="0" width="100%" />
-                            </svg>
-                            Lotus Eletre</button>
-                        <button type="button" class="main__btn tab__btn btn " data-tab="int-huawei">
-                            <svg class="btn-border">
-                                <linearGradient id="linear-gradient-dark9" x1="30%" y1="40%" x2="70%" y2="0%">
-                                    <stop offset="0%" stop-color="rgba(0, 0, 0, 0)" />
-                                    <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
-                                </linearGradient>
-                                <rect stroke-width="2" stroke="url(#linear-gradient-dark9)" rx="10px" ry="10px" x="0"
-                                    y="0" width="100%" />
-                            </svg>
-                            Huawei Aito
-                            M9</button>
-                    </div>
-                    <div id="int-zeekr" class="tab-content active">
-                        <div class="tab__content__block">
-                            <div class="photo-container">
-                                <img src="/images/interior_Zeekr1.png" class="img__tab1 img__tab">
-                            </div>
-
-                            <div class="photo-container grouped">
-                                <div class="grouped-photo">
-                                    <img src="/images/interior_Zeekr2.png" class="img__tab2 img__tab">
-                                </div>
-                                <div class="grouped-box">
-                                    <div class="grouped-photo">
-                                        <img src="/images/interior_Zeekr3.png" class="img__tab3 img__tab">
-                                    </div>
-                                    <div class="grouped-photo">
-                                        <img src="/images/interior_Zeekr4.png" class="img__tab4 img__tab">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn__container-2 btn__bckg">
-                            <a href="http://cx22706.tw1.ru/brands/zeekr/" class="btn btn-forward main__btn_dark">
+                                Lotus Eletre</button>
+                            <button type="button" class="main__btn tab__btn btn " data-tab="ext-byd">
                                 <svg class="btn-border">
-                                    <linearGradient id="linear-gradient-black10" x1="20%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" stop-color="rgba(0, 0, 0, 0)" />
-                                        <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
+                                    <linearGradient id="linear-gradient-tab3" x1="30%" y1="40%" x2="70%" y2="0%">
+                                        <stop offset="0%" stop-color="rgba(0, 0, 0, 0.03)" />
+                                        <stop offset="100%" stop-color="rgba(0, 0, 0, .5)" />
                                     </linearGradient>
-                                    <rect stroke-width="1.5" stroke="url(#linear-gradient-black10)" rx="10px" ry="10px"
-                                        y="0" style="width: 100%;" />
+                                    <rect stroke-width="2" stroke="url(#linear-gradient-tab3)" rx="10px" ry="10px" x="0"
+                                        y="0" width="100%" />
                                 </svg>
-
-                                <div class="btn__inner">
-                                    <span>Все модели</span>
-                                    <svg class="btn__icon icon-arrow_forward" style="stroke: black;">
-                                        <use xlink:href="/images/logo/sprite.svg#arrow_forward"></use>
-                                    </svg>
+                                BYD Yuan 2022
+                            </button>
+                        </div>
+                        <div id="ext-zeekr" class="tab-content active">
+                            <div class="tab__content__block">
+                                <div class="photo-container">
+                                    <img src="images/exterior_Zeekr1.webp" class="img__tab1 img__tab" alt="zeekr 009"
+                                        loading="lazy">
                                 </div>
-                            </a>
+
+                                <div class="photo-container grouped">
+                                    <div class="grouped-photo">
+                                        <img src="images/exterior_Zeekr2.webp" class="img__tab2 img__tab"
+                                            alt="zeekr 009" loading="lazy">
+                                    </div>
+                                    <div class="grouped-box">
+                                        <div class="grouped-photo">
+                                            <img src="images/exterior_Zeekr3.webp" class="img__tab3 img__tab"
+                                                alt="zeekr 009" loading="lazy">
+                                        </div>
+                                        <div class="grouped-photo">
+                                            <img src="images/exterior_Zeekr4.webp" class="img__tab4 img__tab"
+                                                alt="zeekr 009" loading="lazy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn__container-2 btn__bckg">
+                                <a href="/brands/zeekr/" class="btn btn-forward main__btn_dark">
+                                    <svg class="btn-border">
+                                        <linearGradient id="linear-gradient-auto1" x1="20%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="rgba(0, 0, 0, 0.03)" />
+                                            <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
+                                        </linearGradient>
+                                        <rect stroke-width="1.5" stroke="url(#linear-gradient-auto1)" rx="10px"
+                                            ry="10px" y="0" width="100%" />
+                                    </svg>
+
+                                    <div class="btn__inner">
+                                        <span>Все модели</span>
+                                        <svg class="btn__icon icon-arrow_forward" style="stroke: black;">
+                                            <use xlink:href="/images/logo/sprite.svg#arrow_forward"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="ext-lotus" class="tab-content">
+                            <div class="tab__content__block">
+                                <div class="photo-container">
+                                    <img src="images/exterior_Lotus1.webp" class="img__tab1 img__tab" alt="lotus Eletre"
+                                        loading="lazy">
+                                </div>
+                                <div class="photo-container grouped">
+                                    <div class="grouped-photo">
+                                        <img src="images/exterior_Lotus2.webp" class="img__tab2 img__tab"
+                                            alt="lotus Eletre" loading="lazy">
+                                    </div>
+                                    <div class="grouped-box">
+                                        <div class="grouped-photo">
+                                            <img src="images/exterior_Lotus3.webp" class="img__tab3 img__tab"
+                                                alt="lotus Eletre" loading="lazy">
+                                        </div>
+                                        <div class="grouped-photo">
+                                            <img src="images/exterior_Lotus4.webp" class="img__tab4 img__tab"
+                                                alt="lotus Eletre" loading="lazy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn__container-2 btn__bckg">
+                                <a href="/brands/lotus/" class="btn btn-forward main__btn_dark">
+                                    <svg class="btn-border">
+                                        <linearGradient id="linear-gradient-auto2" x1="20%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="rgba(0, 0, 0, 0.03)" />
+                                            <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
+                                        </linearGradient>
+                                        <rect stroke-width="1.5" stroke="url(#linear-gradient-auto2)" rx="10px"
+                                            ry="10px" y="0" width="100%" />
+                                    </svg>
+
+                                    <div class="btn__inner">
+                                        <span>Все модели</span>
+                                        <svg class="btn__icon icon-arrow_forward" style="stroke: black;">
+                                            <use xlink:href="/images/logo/sprite.svg#arrow_forward"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div id="ext-byd" class="tab-content">
+                            <div class="tab__content__block">
+                                <div class="photo-container">
+                                    <img src="images/exterior_Byd1.webp" class="img__tab1 img__tab" alt="byd yuan"
+                                        loading="lazy">
+                                </div>
+                                <div class="photo-container grouped">
+                                    <div class="grouped-photo">
+                                        <img src="images/exterior_Byd2.webp" class="img__tab2 img__tab" alt="byd yuan"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="grouped-box">
+                                        <div class="grouped-photo">
+                                            <img src="images/exterior_Byd3.webp" class="img__tab3 img__tab"
+                                                alt="byd yuan" loading="lazy">
+                                        </div>
+                                        <div class="grouped-photo">
+                                            <img src="images/exterior_Byd4.webp" class="img__tab4 img__tab"
+                                                alt="byd yuan" loading="lazy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn__container-2 btn__bckg">
+                                <a href="/brands/byd/" class="btn btn-forward main__btn_dark">
+                                    <svg class="btn-border">
+                                        <linearGradient id="linear-gradient-auto3" x1="20%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="rgba(0, 0, 0, 0.03)" />
+                                            <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
+                                        </linearGradient>
+                                        <rect stroke-width="1.5" stroke="url(#linear-gradient-auto3)" rx="10px"
+                                            ry="10px" y="0" width="100%" />
+                                    </svg>
+
+                                    <div class="btn__inner">
+                                        <span>Все модели</span>
+                                        <svg class="btn__icon icon-arrow_forward" style="stroke: black;">
+                                            <use xlink:href="/images/logo/sprite.svg#arrow_forward"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div id="int-lotus" class="tab-content">
-                        <div class="tab__content__block">
-                            <div class="photo-container">
-                                <img src="/images/interior_Lotus1.png" class="img__tab1 img__tab">
-                            </div>
-                            <div class="photo-container grouped">
-                                <div class="grouped-photo">
-                                    <img src="/images/interior_Lotus2.png" class="img__tab2 img__tab">
-                                </div>
-                                <div class="grouped-box">
-                                    <div class="grouped-photo">
-                                        <img src="/images/interior_Lotus3.png" class="img__tab3 img__tab">
-                                    </div>
-                                    <div class="grouped-photo">
-                                        <img src="/images/interior_Lotus4.png" class="img__tab4 img__tab">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn__container-2 btn__bckg">
-                            <a href="http://cx22706.tw1.ru/brands/lotus/" class="btn btn-forward main__btn_dark">
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="interior">
+                <div class="interior__container container">
+                    <h2 class="interior__title">Интерьер</h2>
+                    <div class="tab">
+                        <div class="btn__container btn__container-tab">
+                            <button class="main__btn tab__btn btn active" data-tab="int-zeekr">
                                 <svg class="btn-border">
-                                    <linearGradient id="linear-gradient-black11" x1="20%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" stop-color="rgba(0, 0, 0, 0)" />
-                                        <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
+                                    <linearGradient id="linear-gradient-tab4" x1="30%" y1="40%" x2="70%" y2="0%">
+                                        <stop offset="0%" stop-color="rgba(0, 0, 0, 0.03)" />
+                                        <stop offset="100%" stop-color="rgba(0, 0, 0, .5)" />
                                     </linearGradient>
-                                    <rect stroke-width="1.5" stroke="url(#linear-gradient-black11)" rx="10px" ry="10px"
-                                        y="0" style="width: 100%;" />
+                                    <rect stroke-width="2" stroke="url(#linear-gradient-tab4)" rx="10px" ry="10px" x="0"
+                                        y="0" width="100%" />
                                 </svg>
-
-                                <div class="btn__inner">
-                                    <span>Все модели</span>
-                                    <svg class="btn__icon icon-arrow_forward" style="stroke: black;">
-                                        <use xlink:href="/images/logo/sprite.svg#arrow_forward"></use>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div id="int-huawei" class="tab-content">
-                        <div class="tab__content__block">
-                            <div class="photo-container">
-                                <img src="/images/interior_Huawei1.png" class="img__tab1 img__tab">
-                            </div>
-                            <div class="photo-container grouped">
-                                <div class="grouped-photo">
-                                    <img src="/images/interior_Huawei2.png" class="img__tab2 img__tab">
-                                </div>
-                                <div class="grouped-box">
-                                    <div class="grouped-photo">
-                                        <img src="/images/interior_Huawei3.png" class="img__tab3 img__tab">
-                                    </div>
-                                    <div class="grouped-photo">
-                                        <img src="/images/interior_Huawei1.png" class="img__tab4 img__tab">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn__container-2 btn__bckg">
-                            <a href="#" class="btn btn-forward main__btn_dark">
+                                Zeekr 009</button>
+                            <button type="button" class="main__btn tab__btn btn " data-tab="int-lotus">
                                 <svg class="btn-border">
-                                    <linearGradient id="linear-gradient-black12" x1="20%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" stop-color="rgba(0, 0, 0, 0)" />
-                                        <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
+                                    <linearGradient id="linear-gradient-tab5" x1="30%" y1="40%" x2="70%" y2="0%">
+                                        <stop offset="0%" stop-color="rgba(0, 0, 0, 0.03)" />
+                                        <stop offset="100%" stop-color="rgba(0, 0, 0, .5)" />
                                     </linearGradient>
-                                    <rect stroke-width="1.5" stroke="url(#linear-gradient-black12)" rx="10px" ry="10px"
-                                        y="0" style="width: 100%;" />
+                                    <rect stroke-width="2" stroke="url(#linear-gradient-tab5)" rx="10px" ry="10px" x="0"
+                                        y="0" width="100%" />
                                 </svg>
+                                Lotus Eletre</button>
+                            <button type="button" class="main__btn tab__btn btn " data-tab="int-byd">
+                                <svg class="btn-border">
+                                    <linearGradient id="linear-gradient-tab6" x1="30%" y1="40%" x2="70%" y2="0%">
+                                        <stop offset="0%" stop-color="rgba(0, 0, 0, 0.03)" />
+                                        <stop offset="100%" stop-color="rgba(0, 0, 0, .5)" />
+                                    </linearGradient>
+                                    <rect stroke-width="2" stroke="url(#linear-gradient-tab6)" rx="10px" ry="10px" x="0"
+                                        y="0" width="100%" />
+                                </svg>
+                                BYD Yuan 2022
+                            </button>
+                        </div>
+                        <div id="int-zeekr" class="tab-content active">
+                            <div class="tab__content__block">
+                                <div class="photo-container">
+                                    <img src="images/interior_Zeekr1.webp" class="img__tab1 img__tab" alt="zeekr 009"
+                                        loading="lazy">
+                                </div>
 
-                                <div class="btn__inner">
-                                    <span>Все модели</span>
-                                    <svg class="btn__icon icon-arrow_forward" style="stroke: black;">
-                                        <use xlink:href="/images/logo/sprite.svg#arrow_forward"></use>
+                                <div class="photo-container grouped">
+                                    <div class="grouped-photo">
+                                        <img src="images/interior_Zeekr2.webp" class="img__tab2 img__tab"
+                                            alt="zeekr 009" loading="lazy">
+                                    </div>
+                                    <div class="grouped-box">
+                                        <div class="grouped-photo">
+                                            <img src="images/interior_Zeekr3.webp" class="img__tab3 img__tab"
+                                                alt="zeekr 009" loading="lazy">
+                                        </div>
+                                        <div class="grouped-photo">
+                                            <img src="images/interior_Zeekr4.webp" class="img__tab4 img__tab"
+                                                alt="zeekr 009" loading="lazy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn__container-2 btn__bckg">
+                                <a href="/brands/zeekr/" class="btn btn-forward main__btn_dark">
+                                    <svg class="btn-border">
+                                        <linearGradient id="linear-gradient-auto4" x1="20%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="rgba(0, 0, 0, 0.03)" />
+                                            <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
+                                        </linearGradient>
+                                        <rect stroke-width="1.5" stroke="url(#linear-gradient-auto4)" rx="10px"
+                                            ry="10px" y="0" width="100%" />
                                     </svg>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
 
-            <!-- choice -->
-
-            <!-- <div class="choice dark__container">
-                <div class="choice__content container">
-                    <h2 class="title__text text__content">Выбор <span class="descr__logo">ecomobil</span></h2>
-                    <div class="container__block-choice">
-                        <div class="container__image">
-                            <img src="./images/choice_car1.png" alt="Voyah Free DNA" class="Voyah">
-                            <div class="choice__item-descr">
-                                <h2 class="choice__item-title text__black"><span>Voyah Free DNA</span></h2>
-                            </div>
-                        </div>
-                        <div class="choice__block">
-                            <div class="choice__box-btn">
-                                <div class="btn__choice-descr">
-                                    <h2><span class="btn__choice-title">Voyah</span></h2>
-                                </div>
-                                <div class="container__modal-btn choice__btn">
-                                    <button class="btn btn-forward">
-                                        <svg class="btn-border">
-                                            <linearGradient id="linear-gradient-white" x1="20%" y1="0%" x2="100%"
-                                                y2="0%">
-                                                <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
-                                                <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
-                                            </linearGradient>
-                                            <rect stroke-width="1.5" stroke="url(#linear-gradient-white)" rx="10px"
-                                                ry="10px" style="width: 100%;" />
+                                    <div class="btn__inner">
+                                        <span>Все модели</span>
+                                        <svg class="btn__icon icon-arrow_forward" style="stroke: black;">
+                                            <use xlink:href="/images/logo/sprite.svg#arrow_forward"></use>
                                         </svg>
-
-                                        <div class="btn__inner">
-                                            <span>Все модели</span>
-                                            <svg class="btn__icon icon-arrow_forward">
-                                                <use xlink:href="images/logo/sprite.svg#arrow_forward"></use>
-                                            </svg>
-
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="int-lotus" class="tab-content">
+                            <div class="tab__content__block">
+                                <div class="photo-container">
+                                    <img src="images/interior_Lotus1.webp" alt="lotus Eletre" class="img__tab1 img__tab"
+                                        loading="lazy">
+                                </div>
+                                <div class="photo-container grouped">
+                                    <div class="grouped-photo">
+                                        <img src="images/interior_Lotus2.webp" alt="lotus Eletre"
+                                            class="img__tab2 img__tab" loading="lazy">
+                                    </div>
+                                    <div class="grouped-box">
+                                        <div class="grouped-photo">
+                                            <img src="images/interior_Lotus3.webp" alt="lotus Eletre"
+                                                class="img__tab3 img__tab" loading="lazy">
                                         </div>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="container__choice-cars">
-                                <div class="choice__image">
-                                    <img src="./images/choice_car2.png" alt="Zhuiguang">
-                                    <div class="choice__list-descr">
-                                        <h2><span class="descr choice__list-title">Zhuiguang</span></h2>
-                                    </div>
-                                </div>
-                                <div class="choice__image">
-                                    <img src="./images/choice_car3.png" alt="Dreamer">
-                                    <div class="choice__list-descr">
-                                        <h2><span class="descr choice__list-title">Dreamer</span></h2>
+                                        <div class="grouped-photo">
+                                            <img src="images/interior_Lotus4.webp" alt="lotus Eletre"
+                                                class="img__tab4 img__tab" loading="lazy">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="btn__container-2 btn__bckg">
+                                <a href="/brands/lotus/" class="btn btn-forward main__btn_dark">
+                                    <svg class="btn-border">
+                                        <linearGradient id="linear-gradient-auto5" x1="20%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="rgba(0, 0, 0, 0.03)" />
+                                            <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
+                                        </linearGradient>
+                                        <rect stroke-width="1.5" stroke="url(#linear-gradient-auto5)" rx="10px"
+                                            ry="10px" y="0" width="100%" />
+                                    </svg>
 
-                        </div>
-                    </div> -->
-
-                    <!-- BLOCK-2 -->
-
-                    <!-- <div class="container__block-choice">
-                        <div class="container__image">
-                            <img src="./images/choice_car4.png" alt="Zeekr X">
-                            <div class="choice__item-descr">
-                                <h2><span class="choice__item-title text__black">Zeekr X</span></h2>
-                            </div>
-                        </div>
-                        <div class="choice__block">
-                            <div class="choice__box-btn">
-                                <div class="btn__choice-descr">
-                                    <h2><span class="btn__choice-title">Zeekr</span></h2>
-                                </div>
-                                <div class="container__modal-btn choice__btn">
-                                    <button class="btn btn-forward">
-                                        <svg class="btn-border">
-                                            <linearGradient id="linear-gradient-white" x1="20%" y1="0%" x2="100%"
-                                                y2="0%">
-                                                <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
-                                                <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
-                                            </linearGradient>
-                                            <rect stroke-width="1.5" stroke="url(#linear-gradient-white)" rx="10px"
-                                                ry="10px" style="width: 100%;" />
+                                    <div class="btn__inner">
+                                        <span>Все модели</span>
+                                        <svg class="btn__icon icon-arrow_forward" style="stroke: black;">
+                                            <use xlink:href="/images/logo/sprite.svg#arrow_forward"></use>
                                         </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
 
-                                        <div class="btn__inner">
-                                            <span>Все модели</span>
-                                            <svg class="btn__icon icon-arrow_forward">
-                                                <use xlink:href="images/logo/sprite.svg#arrow_forward"></use>
-                                            </svg>
 
+                        <div id="int-byd" class="tab-content">
+                            <div class="tab__content__block">
+                                <div class="photo-container">
+                                    <img src="images/interior_Byd1.webp" class="img__tab1 img__tab" alt="byd yuan"
+                                        loading="lazy">
+                                </div>
+                                <div class="photo-container grouped">
+                                    <div class="grouped-photo">
+                                        <img src="images/interior_Byd2.webp" class="img__tab2 img__tab" alt="byd yuan"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="grouped-box">
+                                        <div class="grouped-photo">
+                                            <img src="images/interior_Byd3.webp" class="img__tab3 img__tab"
+                                                alt="byd yuan" loading="lazy">
                                         </div>
-                                    </button>
+                                        <div class="grouped-photo">
+                                            <img src="images/interior_Byd4.webp" class="img__tab4 img__tab"
+                                                alt="byd yuan" loading="lazy">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="container__choice-cars">
-                                <div class="choice__image">
-                                    <img src="./images/choice_car6.png" alt="009">
-                                    <div class="choice__list-descr">
-                                        <h2><span class="choice__list-title">009</span></h2>
+                            <div class="btn__container-2 btn__bckg">
+                                <a href="/brands/byd/" class="btn btn-forward main__btn_dark">
+                                    <svg class="btn-border">
+                                        <linearGradient id="linear-gradient-auto6" x1="20%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="rgba(0, 0, 0, 0.03)" />
+                                            <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
+                                        </linearGradient>
+                                        <rect stroke-width="1.5" stroke="url(#linear-gradient-auto6)" rx="10px"
+                                            ry="10px" y="0" width="100%" />
+                                    </svg>
+
+                                    <div class="btn__inner">
+                                        <span>Все модели</span>
+                                        <svg class="btn__icon icon-arrow_forward" style="stroke: black;">
+                                            <use xlink:href="/images/logo/sprite.svg#arrow_forward"></use>
+                                        </svg>
                                     </div>
-                                </div>
-                                <div class="choice__image">
-                                    <img src="./images/choice_car5.png" alt="001">
-                                    <div class="choice__list-descr">
-                                        <h2><span class="choice__list-title">001</span></h2>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div> -->
-
-            <!-- main -->
-            <!-- <div class="container__main">
-                <div class="main__content container">
-                    <h2 class="title__text">Основные модели</h2>
-                    <div class="container__block-main">
-                        <div class="box-image-main">
-                            <div class="group__image-main">
-                                <div class="block__main-img">
-                                    <img src="./images/BasicModels1.png" alt="Lixiang i7">
-                                    <div class="main__item-descr">
-                                        <h2><span class="descr main__item-title">Lixiang i7</span></h2>
-                                    </div>
-                                </div>
-                                <div class="block__main-img">
-                                    <img src="./images/BasicModels3.png" alt="Zeekr 007">
-                                    <div class="main__item-descr">
-                                        <h2><span class="descr main__item-title">Zeekr 007</span></h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__image-main">
-                                <div class="block__main-img">
-                                    <img src="./images/BasicModels2.png" alt="lixiang i9">
-                                    <div class="main__item-descr">
-                                        <h2><span class="descr main__item-title">Lixiang i9</span></h2>
-                                    </div>
-                                </div>
-                                <div class="block__main-img">
-                                    <img src="./images/BasicModels4.png" alt="Hongqi H5">
-                                    <div class="main__item-descr">
-                                        <h2><span class="descr main__item-title">HONGQI H5</span></h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main__block">
-                                <div class="container__modal-btn main__btn">
-                                    <button class="btn btn-forward">
-                                        <svg class="btn-border">
-                                            <linearGradient id="linear-gradient-white" x1="20%" y1="0%" x2="100%"
-                                                y2="0%">
-                                                <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
-                                                <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
-                                            </linearGradient>
-                                            <rect stroke-width="1.5" stroke="url(#linear-gradient-white)" rx="10px"
-                                                ry="10px" style="width: 100%;" />
-                                        </svg>
-
-                                        <div class="btn__inner">
-                                            <span>Все модели</span>
-                                            <svg class="btn__icon icon-arrow_forward">
-                                                <use xlink:href="images/logo/sprite.svg#arrow_forward"></use>
-                                            </svg>
-
-                                        </div>
-                                    </button>
-                                </div>
-                            <div class="container__main-car">
-                                <div class="main__image">
-                                    <img src="./images/BasicModels5.png" alt="Aito">
-                                    <div class="main__list-descr">
-                                        <h2><span class="descr main__list-title">Aito M5</span></h2>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div> -->
-
-            <!-- EXCLUSIv   -->
-            <!-- <div class="exclusive__container">
-                <div class="exclusive__content container">
-                    <h2 class="title__text text__content">Эксклюзивно в <span class="descr__logo">ecomobil</span></h2> 
-                        <div class="container__block-exclusive">
-                            <div class="box-image-exclusive">
-                                <div class="group__image-exclusive">
-                                    <div class="block__exclusive-img">
-                                        <img src="./images/Exclusive_Car1.png" alt="HOHGQI E-HS9">
-                                        <div class="exclusive__item-descr__top">
-                                            <h2><span class="descr exclusive__item-title">HONGQI E-HS9</span></h2>
-                                        </div>
-                                    </div>
-                                    <div class="block__exclusive-img">
-                                        <img src="./images/Exclusive_Car1_1.png" alt="HOHGQI E-HS9">
-                                    </div>
-                                </div>
-                                <div class="group__image-exclusive">
-                                    <div class="block__exclusive-img">
-                                        <img src="./images/exclusive__BYD Yangwang.png" alt="BYD Yangwang U8">
-                                        <div class="exclusive__item-descr__bottom">
-                                            <h2><span class="descr exclusive__item-title">BYD Yangwang U8</span></h2>
-                                        </div>
-                                    </div>
-                                    <div class="block__exclusive-img">
-                                        <img src="./images/Exclusive_Car2.png" alt="Tank 500">
-                                        <div class="exclusive__item-descr__bottom">
-                                        <h2><span class="descr exclusive__item-title">TANK 500</span></h2>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="exclusive__block">
-                                <div class="container__modal-btn exlus__btn">
-                                    <button class="btn btn-forward">
-                                        <svg class="btn-border">
-                                            <linearGradient id="linear-gradient-white" x1="20%" y1="0%" x2="100%"
-                                                y2="0%">
-                                                <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
-                                                <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
-                                            </linearGradient>
-                                            <rect stroke-width="1.5" stroke="url(#linear-gradient-white)" rx="10px"
-                                                ry="10px" style="width: 100%;" />
-                                        </svg>
-
-                                        <div class="btn__inner">
-                                            <span>Все модели</span>
-                                            <svg class="btn__icon icon-arrow_forward">
-                                                <use xlink:href="images/logo/sprite.svg#arrow_forward"></use>
-                                            </svg>
-
-                                        </div>
-                                    </button>
-                                </div>
-                                <div class="container__exclusive-car">
-                                    <div class="exclusive__image">
-                                        <img src="./images/Exclusive_Car2_1.png" alt="Tank">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                 </div>
             </div>
-   -->
+            <div class="selections">
+                <div class="selections__container container">
+                    <div class="selections__item">
+                        <h2 class="selections__item-title">Выбор <a href="/" class="selections__item-link">ECOMOBIL</a>
+                        </h2>
 
-            <!-- ELECTRO__CARS -->
+                        <h3 class="selections__item-heading_mobile">VOYAH</h3>
+                        <div class="selections__item-box">
+                            <a href="https://ecomobilcars.ru/brands/voyah/chasing-light/" class="selections__item-main">
+                                <img src="https://ecomobilcars.ru/wp-content/uploads/2024/02/preview-1-1.webp"
+                                    alt="VOYAH Chasing Light" class="selections__item-img" loading="lazy">
+                                <div class="selections__item-descr">
+                                    <h4 class="selections__main-name selections__name">VOYAH Chasing Light</h4>
+                                </div>
+                            </a>
+                            <div class="selections__item-right">
+                                <div class="selections__item-heading">
+                                    <h3 class="selections__item-subtitle">VOYAH</h3>
+                                    <a href="https://ecomobilcars.ru/brands/voyah/"
+                                        class="selections__item-btn btn btn-forward">
+                                        <svg class="btn-border">
+                                            <linearGradient id="linear-gradient-selection1" x1="20%" y1="0%" x2="100%"
+                                                y2="0%">
+                                                <stop offset="0%" stop-color="rgba(255, 255, 255, .03)" />
+                                                <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
+                                            </linearGradient>
+                                            <rect stroke-width="1.5" stroke="url(#linear-gradient-selection1)" rx="10px"
+                                                ry="10px" y="0" width="100%" />
+                                        </svg>
+
+                                        <div class="btn__inner">
+                                            <span>Все модели</span>
+                                            <svg class="btn__icon icon-arrow_forward">
+                                                <use
+                                                    xlink:href="/wp-content/themes/Ecomobil/assets/images/sprite.svg#arrow_forward">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="selections__item-section">
+                                    <a href="https://ecomobilcars.ru/brands/voyah/dreamer-phev/"
+                                        class="selections__section-left">
+                                        <img src="https://ecomobilcars.ru/wp-content/uploads/2024/02/preview-5.webp"
+                                            alt="VOYAH Dreamer PHEV" class="selections__item-img" loading="lazy">
+                                        <div class="selections__item-descr">
+                                            <h4 class="selections__name">Dreamer PHEV</h4>
+                                        </div>
+                                    </a>
+                                    <a href="https://ecomobilcars.ru/brands/voyah/free/"
+                                        class="selections__section-right">
+                                        <img src="https://ecomobilcars.ru/wp-content/uploads/2024/02/pjV5Fx__wint2mb.webp"
+                                            alt="VOYAH Free" class="selections__item-img">
+                                        <div class="selections__item-descr">
+                                            <h4 class="selections__name">Free</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <h3 class="selections__item-heading_mobile">Zeekr</h3>
+                        <div class="selections__item-box">
+                            <a href="https://ecomobilcars.ru/brands/zeekr/x/" class="selections__item-main">
+                                <img src="https://ecomobilcars.ru/wp-content/uploads/2024/02/preview1.webp"
+                                    alt="Zeekr X" class="selections__item-img" loading="lazy">
+                                <div class="selections__item-descr">
+                                    <h4 class="selections__main-name selections__name">Zeekr X</h4>
+                                </div>
+                            </a>
+                            <div class="selections__item-right">
+                                <div class="selections__item-heading">
+                                    <h3 class="selections__item-subtitle">Zeekr</h3>
+                                    <a href="https://ecomobilcars.ru/brands/zeekr/"
+                                        class="selections__item-btn btn btn-forward">
+                                        <svg class="btn-border">
+                                            <linearGradient id="linear-gradient-selection1" x1="20%" y1="0%" x2="100%"
+                                                y2="0%">
+                                                <stop offset="0%" stop-color="rgba(255, 255, 255, .03)" />
+                                                <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
+                                            </linearGradient>
+                                            <rect stroke-width="1.5" stroke="url(#linear-gradient-selection1)" rx="10px"
+                                                ry="10px" y="0" width="100%" />
+                                        </svg>
+
+                                        <div class="btn__inner">
+                                            <span>Все модели</span>
+                                            <svg class="btn__icon icon-arrow_forward">
+                                                <use
+                                                    xlink:href="/wp-content/themes/Ecomobil/assets/images/sprite.svg#arrow_forward">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="selections__item-section">
+                                    <a href="https://ecomobilcars.ru/brands/zeekr/zeekr-001/"
+                                        class="selections__section-left">
+                                        <img src="https://ecomobilcars.ru/wp-content/uploads/2024/02/preview.webp"
+                                            alt="Zeekr 001" class="selections__item-img" loading="lazy">
+                                        <div class="selections__item-descr">
+                                            <h4 class="selections__name">001</h4>
+                                        </div>
+                                    </a>
+                                    <a href="https://ecomobilcars.ru/brands/zeekr/zeekr-009/"
+                                        class="selections__section-right">
+                                        <img src="https://ecomobilcars.ru/wp-content/uploads/2024/02/preview21.webp"
+                                            alt="Zeekr 009" class="selections__item-img">
+                                        <div class="selections__item-descr">
+                                            <h4 class="selections__name">009</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selections__item selections__item_main">
+                        <h2 class="selections__item-title">Основные модели</h2>
+                        <div class="selections__item-box">
+                            <a href="https://ecomobilcars.ru/brands/hongqi/e-hs9/" class="selections__item-main">
+                                <img src="https://ecomobilcars.ru/wp-content/uploads/2024/02/preview32_11zon.webp"
+                                    alt="Hongqi E-HS9" class="selections__item-img" loading="lazy">
+                                <div class="selections__item-descr">
+                                    <h4 class="selections__name">
+                                        Hongqi E-HS9 </h4>
+                                </div>
+                            </a>
+                            <a href="https://ecomobilcars.ru/brands/voyah/free/" class="selections__item-main">
+                                <img src="https://ecomobilcars.ru/wp-content/uploads/2024/02/pjV5Fx__wint2mb.webp"
+                                    alt="VOYAH Free" class="selections__item-img" loading="lazy">
+                                <div class="selections__item-descr">
+                                    <h4 class="selections__name">
+                                        VOYAH Free </h4>
+                                </div>
+                            </a>
+                            <a href="https://ecomobilcars.ru/brands/li/l7/" class="selections__item-main">
+                                <img src="https://ecomobilcars.ru/wp-content/uploads/2024/02/Основная.webp" alt="Li L7"
+                                    class="selections__item-img" loading="lazy">
+                                <div class="selections__item-descr">
+                                    <h4 class="selections__name">
+                                        Li L7 </h4>
+                                </div>
+                            </a>
+                            <a href="https://ecomobilcars.ru/brands/li/l9/" class="selections__item-main">
+                                <img src="https://ecomobilcars.ru/wp-content/uploads/2024/02/2571c51f34.webp"
+                                    alt="Li L9" class="selections__item-img" loading="lazy">
+                                <div class="selections__item-descr">
+                                    <h4 class="selections__name">
+                                        Li L9 </h4>
+                                </div>
+                            </a>
+                            <a href="https://ecomobilcars.ru/brands/tesla/model-y/" class="selections__item-main">
+                                <img src="https://ecomobilcars.ru/wp-content/uploads/2024/02/preview_34_11zon-e1708869819901.webp"
+                                    alt="Tesla Model Y" class="selections__item-img" loading="lazy">
+                                <div class="selections__item-descr">
+                                    <h4 class="selections__name">
+                                        Tesla Model Y </h4>
+                                </div>
+                            </a>
+                            <div class="selections__item-heading">
+                                <a href="https://ecomobilcars.ru/base/" class="selections__item-btn btn btn-forward">
+                                    <!-- <a href="/brands" class="selections__item-btn btn btn-forward"> -->
+                                    <svg class="btn-border">
+                                        <linearGradient id="linear-gradient-selection1" x1="20%" y1="0%" x2="100%"
+                                            y2="0%">
+                                            <stop offset="0%" stop-color="rgba(255, 255, 255, .03)" />
+                                            <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
+                                        </linearGradient>
+                                        <rect stroke-width="1.5" stroke="url(#linear-gradient-selection1)" rx="10px"
+                                            ry="10px" y="0" width="100%" />
+                                    </svg>
+
+                                    <div class="btn__inner">
+                                        <span>Все модели</span>
+                                        <svg class="btn__icon icon-arrow_forward">
+                                            <use
+                                                xlink:href="/wp-content/themes/Ecomobil/assets/images/sprite.svg#arrow_forward">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selections__item  selections__item_main">
+                        <h2 class="selections__item-title">Эксклюзивно в <a href="/"
+                                class="selections__item-link">ECOMOBIL</a></h2>
+                        <div class="selections__item-box">
+                            <a href="https://ecomobilcars.ru/brands/toyota/bz4x/" class="selections__item-main">
+                                <img src="https://ecomobilcars.ru/wp-content/uploads/2024/02/Preview6_1_11zon-1-e1709147236420.webp"
+                                    alt="Toyota bZ4X" class="selections__item-img" loading="lazy">
+                                <div class="selections__item-descr">
+                                    <h4 class="selections__name">
+                                        Toyota bZ4X </h4>
+                                </div>
+                            </a>
+                            <a href="https://ecomobilcars.ru/brands/hongqi/e-hs9/" class="selections__item-main">
+                                <img src="https://ecomobilcars.ru/wp-content/uploads/2024/02/preview32_11zon.webp"
+                                    alt="Hongqi E-HS9" class="selections__item-img" loading="lazy">
+                                <div class="selections__item-descr">
+                                    <h4 class="selections__name">
+                                        Hongqi E-HS9 </h4>
+                                </div>
+                            </a>
+                            <a href="https://ecomobilcars.ru/brands/hiphi/y/" class="selections__item-main">
+                                <img src="https://ecomobilcars.ru/wp-content/uploads/2024/02/preview5_64_11zon-e1708874150601.webp"
+                                    alt="HiPhi Y" class="selections__item-img" loading="lazy">
+                                <div class="selections__item-descr">
+                                    <h4 class="selections__name">
+                                        HiPhi Y </h4>
+                                </div>
+                            </a>
+                            <a href="https://ecomobilcars.ru/brands/byd/yuan-2023/" class="selections__item-main">
+                                <img src="https://ecomobilcars.ru/wp-content/uploads/2024/02/picture-20.webp"
+                                    alt="BYD Yuan 2023" class="selections__item-img" loading="lazy">
+                                <div class="selections__item-descr">
+                                    <h4 class="selections__name">
+                                        BYD Yuan 2023 </h4>
+                                </div>
+                            </a>
+                            <a href="https://ecomobilcars.ru/brands/hiphi/z/" class="selections__item-main">
+                                <img src="https://ecomobilcars.ru/wp-content/uploads/2024/02/preview1_35_11zon-1-e1708870954455.webp"
+                                    alt="HiPhi Z" class="selections__item-img" loading="lazy">
+                                <div class="selections__item-descr">
+                                    <h4 class="selections__name">
+                                        HiPhi Z </h4>
+                                </div>
+                            </a>
+                            <div class="selections__item-heading">
+                                <a href="https://ecomobilcars.ru/exclusive/"
+                                    class="selections__item-btn btn btn-forward">
+                                    <!-- <a href="/brands" class="selections__item-btn btn btn-forward"> -->
+                                    <svg class="btn-border">
+                                        <linearGradient id="linear-gradient-selection1" x1="20%" y1="0%" x2="100%"
+                                            y2="0%">
+                                            <stop offset="0%" stop-color="rgba(255, 255, 255, .03)" />
+                                            <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
+                                        </linearGradient>
+                                        <rect stroke-width="1.5" stroke="url(#linear-gradient-selection1)" rx="10px"
+                                            ry="10px" y="0" width="100%" />
+                                    </svg>
+
+                                    <div class="btn__inner">
+                                        <span>Все модели</span>
+                                        <svg class="btn__icon icon-arrow_forward">
+                                            <use
+                                                xlink:href="/wp-content/themes/Ecomobil/assets/images/sprite.svg#arrow_forward">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="electro__cars">
                 <div class="electro__content container">
-                <div class="electro__img-box">
-                    <img src="/images/electro__cars.png" alt="electromobil" class="electro__img">
-                </div>
-                    <div class="electro__left">
-                        <div class="electro__title electro__btn">
+                    <div class="electro__img-box">
+                        <img src="/images/electro__cars.webp" alt="electromobil" class="electro__img">
+                    </div>
+                    <div class="electro__heading">
+                        <div class="electro__title card_border">
                             <svg class="btn-border">
                                 <linearGradient id="linear-gradientCard" x1="30%" y1="00%" x2="70%" y2="00%">
                                     <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
                                     <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
                                 </linearGradient>
-                                <rect stroke-width="2" stroke="url(#linear-gradientCard)" rx="20px" ry="20px" x="0" y="0"
-                                    style="width: 100%;" />
+                                <rect stroke-width="2" stroke="url(#linear-gradientCard)" rx="20px" ry="20px" x="0"
+                                    y="0" style="width: 100%;" />
                             </svg>
                             Почему электрокары?
                         </div>
@@ -749,21 +897,32 @@
                             <div class="posts__item">
                                 <h3 class="posts__title">Экологическая дружественность</h3>
                                 <div class="block__posts-descr">
-                                <p class="posts__descr">Предоставление современных и экологически чистых решений в области транспорта</p>
-                            </div>
+                                    <p class="posts__descr">Предоставление современных и экологически чистых
+                                        решений
+                                        в области транспорта</p>
+                                </div>
                             </div>
                             <div class="posts__item">
                                 <h3 class="posts__title">Экономия ресурсов</h3>
                                 <div class="block__posts-descr">
-                                <p class="posts__descr">Электро-и гибридные автомобили — шаг в будущее и выгодное вложение в собственные финансы благодаря экономии на топливе и обслуживании</p>
-                            </div>
+                                    <p class="posts__descr">Электро-и гибридные автомобили — шаг в будущее
+                                        и выгодное
+                                        вложение в собственные финансы благодаря экономии на топливе
+                                        и обслуживании</p>
+                                </div>
                             </div>
                         </div>
                         <div class="group__block-posts">
-                            <div class="posts__item-bottom">
+                            <div class="posts__item">
                                 <h3 class="posts__title">Эколого-экономическая эффективность</h3>
                                 <div class="block__posts-descr">
-                                    <p class="posts__descr">Мы стремимся снизить воздействие на окружающую среду, предлагая клиентам электромобили, которые работают на чистой энергии. Наш выбор транспортных средств способствует уменьшению выбросов вредных веществ и содействует сохранению природы</p>
+                                    <p class="posts__descr">Мы стремимся снизить воздействие на окружающую
+                                        среду, предлагая
+                                        клиентам электромобили, которые работают на чистой энергии.
+                                        Наш выбор транспортных
+                                        средств способствует уменьшению выбросов вредных веществ
+                                        и содействует сохранению
+                                        природы</p>
                                 </div>
                             </div>
                         </div>
@@ -771,149 +930,406 @@
 
                 </div>
             </div>
-
-
-
-            <!-- PRICE   -->
-            <!-- <div class="request">
-            <div class="request__img-box">
-                <img src="/images/price_car.png" alt="request" class="request__img">
-            </div>
-            <div class="request__container">
-                <div class="request__left">
-                    <form action="/" class="form">
-                        <div class="form__box">
-                            <h3 class="form__title">Узнать подробнее</h3>
-                            <div class="form__item">
-                                <label for="name">Имя</label>
-                                <input type="text" name="name" id="name">
-                            </div>
-                            <div class="form__item">
-                                <label for="phone">Телефон</label>
-                                <input type="text" name="phone" id="phone">
-                            </div>
-                            <div class="form__item">
-                                <label for="email">E-mail</label>
-                                <input type="email" name="email" id="email">
-                            </div>
-                        </div>
-                        <button type="submit" class="form__btn btn">
-                            <svg class="btn-border">
-                                <linearGradient id="linear-gradient-black" x1="20%" y1="0%" x2="100%" y2="0%">
-                                    <stop offset="0%" stop-color="rgba(0, 0, 0, 0)" />
-                                    <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
-                                </linearGradient>
-                                <rect stroke-width="1.5" stroke="url(#linear-gradient-black)" rx="10px" ry="10px" />
-                            </svg>
-                            Отправить</button>
-
-                    </form>
-
-
+            <div class="request request_light">
+                <div class="request__img-box">
+                    <img src="images/request-light.webp" alt="request" class="request__img">
                 </div>
-                <div class="request__right">
-                    <div class="request__descr">
-                        <svg class="btn-border">
-                            <linearGradient id="linear-gradient" x1="40%" y1="50%" x2="100%" y2="50%">
-                                <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
-                                <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
-                            </linearGradient>
-                            <rect stroke-width="2" stroke="url(#linear-gradient)" rx="20px" ry="20px" />
-                        </svg>
-                        Подберем комплектацию,<br>расскажем об автомобиле,<br>сформируем уникальное
-                        предложение
+                <div class="request__container">
+                    <div class="request__left">
+                        <div class="logo__box">
+                            <a href="/" class="logo__link">
+                                <img src="images/logo/ECOMOBIL.svg" alt="Ecomobil" class="logo__img" loading="lazy">
+                            </a>
+                        </div>
+                        <form id="feedback-2" action="#" class="form" method="post">
+                            <input type="hidden" name="action" value="custom_feedback_form">
+                            <div class="form__box">
+                                <h3 class="form__title">Узнать подробнее</h3>
+                                <div class="form__item">
+                                    <label for="name-2">Имя</label>
+                                    <input type="text" name="name" id="name-2">
+                                </div>
+                                <div class="form__item">
+                                    <label for="phone-2">Телефон</label>
+                                    <input type="text" name="phone" data-phone-pattern id="phone-2">
+                                </div>
+                                <div class="form__item">
+                                    <label for="email-2">E-mail</label>
+                                    <input type="email" name="email" id="email-2">
+                                </div>
+                            </div>
+                            <button type="submit" class="form__btn btn main__btn_dark">
+                                <svg class="btn-border">
+                                    <linearGradient id="linear-gradient2" x1="10%" y1="50%" x2="70%" y2="40%">
+                                        <stop offset="0%" stop-color="rgba(0, 0, 0, 0.03)" />
+                                        <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
+                                    </linearGradient>
+                                    <rect stroke-width="1.5" stroke="url(#linear-gradient2)" rx="10px" ry="10px" x="0"
+                                        y="0" width="100%" />
+                                </svg>
+
+                                Отправить
+                            </button>
+                            <div class="error-box"></div>
+                        </form>
+
+
+                    </div>
+                    <div class="request__right">
+                        <div class="request__descr">
+                            <svg class="btn-border">
+                                <linearGradient id="linear-gradientLight" x1="40%" y1="50%" x2="100%" y2="50%">
+                                    <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
+                                    <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
+                                </linearGradient>
+                                <rect stroke-width="2" stroke="url(#linear-gradientLight)" rx="20px" ry="20px" x="0"
+                                    y="0" width="100%" />
+                            </svg>
+                            Подберем комплектацию,<br>расскажем об автомобиле,<br>сформируем уникальное предложение
+                        </div>
+                        <div class="logo__box">
+                            <a href="/" class="logo__link">
+                                <img src="images/logo/ECOMOBIL.svg" alt="Ecomobil" class="logo__img" loading="lazy"
+                                    width="292">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div> -->
-
-            <!-- REVIEW -->
-            <!-- <div class="reviews">
-            <div class="reviews__text-title">
-                <h1 class="title__text">Отзывы</h1>
-            </div>
-            <div class="reviews__container">
-                <div class="container__small-btn__back">
-                    <button class="btn__small btn-back block-btn">
-                        <svg class="btn-border__back">
-                            <linearGradient id="linear-gradient-white" x1="20%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
-                                <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
-                            </linearGradient>
-                            <rect stroke-width="1.5" stroke="url(#linear-gradient-white)" rx="10px" ry="10px" />
-                        </svg>
-
-                        <div class="btn__inner">
-                            <span class="next__hidden"></span>
+            <div class="reviews">
+                <div class="reviews__container container">
+                    <h2 class="reviews__title">Отзывы</h2>
+                    <div class="reviews__box">
+                        <div class="reviews__item">
+                            <h3 class="reviews__item-title">Елена</h3>
+                            <div class="reviews__item-text">
+                                <span>Покупка Lixiang L7 в компании ecomobil стала для меня настоящим открытием в мире
+                                    автомобилей.</span>
+                                <span>Быстрая доставка в Нижний Новгород и оперативное оформление сделки создали
+                                    впечатление профессионализма и заботы о клиенте. Моя машина была у меня всего через
+                                    месяц после внесения предоплаты, что не может не радовать.</span>
+                                <span>Смело могу рекомендовать ecomobil всем, кто ценит комфорт, инновации и надежность
+                                    в автомобильном мире.</span>
+                            </div>
+                        </div>
+                        <div class="reviews__item">
+                            <h3 class="reviews__item-title">Юрий</h3>
+                            <div class="reviews__item-text">
+                                <span>Ecomobil сопровождал сделку от первого звонка до передачи ключей. Я получил свой
+                                    автомобиль через 5 недель после первого звонка менеджерам компании. Теперь планирую
+                                    покупку у ecomobil для жены.</span>
+                            </div>
+                        </div>
+                        <div class="reviews__item">
+                            <h3 class="reviews__item-title">Александр</h3>
+                            <div class="reviews__item-text">
+                                <span>Zeekr - это просто удивительный автомобиль, который я купил в ecomobil. Он
+                                    впечатляет своим сбалансированным дизайном и отличной сборкой. Все в этой машине
+                                    сделано на высшем уровне, и это сразу заметно.</span>
+                                <span>Единственный момент, с которым я столкнулся - это некоторые сложности с запчастями
+                                    в России, но компания ecomobil оперативно решает эту проблему, доставляя необходимые
+                                    детали с завода.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__wrapper">
+                        <div class="reviews__box slider owl-carousel owl-carousel-3">
+                            <div class="reviews__item">
+                                <h3 class="reviews__item-title">Елена</h3>
+                                <div class="reviews__item-text"><span>Покупка Lixiang L7 в компании ecomobil стала для
+                                        меня настоящим открытием в мире автомобилей.</span><span>Быстрая доставка в
+                                        Нижний Новгород и оперативное оформление сделки создали впечатление
+                                        профессионализма и заботы о клиенте. Моя машина была у меня всего через месяц
+                                        после внесения предоплаты, что не может не радовать.</span><span>Смело могу
+                                        рекомендовать ecomobil всем, кто ценит комфорт, инновации и надежность в
+                                        автомобильном мире.</span></div>
+                            </div>
+                            <div class="reviews__item">
+                                <h3 class="reviews__item-title">Юрий</h3>
+                                <div class="reviews__item-text"><span>Ecomobil сопровождал сделку от первого звонка до
+                                        передачи ключей. Я получил свой автомобиль через 5 недель после первого звонка
+                                        менеджерам компании. Теперь планирую покупку у ecomobil для жены.</span></div>
+                            </div>
+                            <div class="reviews__item">
+                                <h3 class="reviews__item-title">Александр</h3>
+                                <div class="reviews__item-text"><span>Zeekr - это просто удивительный автомобиль,
+                                        который я купил в ecomobil. Он впечатляет своим сбалансированным дизайном и
+                                        отличной сборкой. Все в этой машине сделано на высшем уровне, и это сразу
+                                        заметно.</span>
+                                    <span>Единственный момент, с которым я столкнулся - это некоторые сложности с
+                                        запчастями в России, но компания ecomobil оперативно решает эту проблему,
+                                        доставляя необходимые детали с завода.</span>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <h3 class="reviews__item-title">Олег</h3>
+                                <div class="reviews__item-text"><span>Я рад, что купил HONGQI H5 в компании ecomobil.
+                                        Автоматическая коробка передач с восемью ступенями обеспечивает плавное и
+                                        быстрое переключение, делая вождение комфортным.</span>
+                                    <span>Дизайн кузова этой машины действительно стильный и, на мой взгляд, не уступает
+                                        моделям Е класса и БМВ 5. Особенно порадовало, что он точно превосходит
+                                        корейские и японские конкуренты, в частности, Toyota Camry</span>
+                                    <span>Из плюсов хочу отметить быструю доставку – автомобиль был у меня через 4
+                                        недели после заказа, что, на мой взгляд, довольно оперативно.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="slider__prev-3" class="slider__button-prev btn">
+                            <svg class="btn-border">
+                                <linearGradient id="linear-gradient-slider-1" x1="10%" y1="30%" x2="50%" y2="30%">
+                                    <stop offset="0%" stop-color="rgba(255, 255, 255, 1)" />
+                                    <stop offset="100%" stop-color="rgba(255, 255, 255, 0.03)" />
+                                </linearGradient>
+                                <rect stroke-width="1.5" stroke="url(#linear-gradient-slider-1)" rx="10px" ry="10px"
+                                    x="0" y="0" width="100%" />
+                            </svg>
                             <svg class="btn__icon icon-arrow_back">
                                 <use xlink:href="images/logo/sprite.svg#arrow_back"></use>
                             </svg>
                         </div>
-                    </button>
-                </div>
-
-                <div class="reviews__block-item">
-                    <div class="reviews__block-item1">
-                        <div class="header__block1"></div>
-                        <p class="descr-text">Прежде всего, разбавленное изрядной долей эмпатии,
-                            рациональное мышление
-                            представляет собой интересный эксперимент проверки глубокомысленных рассуждений.
-                        </p>
-                    </div>
-                    <div class="reviews__block-item2">
-                        <div class="header__block2"></div>
-                        <p class="descr-text">Прежде всего, разбавленное изрядной долей эмпатии,
-                            рациональное мышление
-                            представляет собой интересный эксперимент проверки глубокомысленных рассуждений.
-                        </p>
-                    </div>
-                    <div class="reviews__block-item3">
-                        <div class="header__block3"></div>
-                        <p class="descr-text">Прежде всего, разбавленное изрядной долей эмпатии,
-                            рациональное мышление
-                            представляет собой интересный эксперимент проверки глубокомысленных рассуждений.
-                        </p>
-                    </div>
-                </div>
-                <div class="container__small-btn__forward">
-                    <button class="btn__small btn-forward block-btn">
-                        <svg class="btn-border__forward">
-                            <linearGradient id="linear-gradient-white" x1="20%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
-                                <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
-                            </linearGradient>
-                            <rect stroke-width="1.5" stroke="url(#linear-gradient-white)" rx="10px" ry="10px" />
-                        </svg>
-
-                        <div class="btn__inner">
-                            <span class="prev__hidden"></span>
+                        <div id="slider__next-3" class="slider__button-next btn">
+                            <svg class="btn-border">
+                                <linearGradient id="linear-gradient-slider-2" x1="50%" y1="30%" x2="90%" y2="30%">
+                                    <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
+                                    <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
+                                </linearGradient>
+                                <rect stroke-width="1.5" stroke="url(#linear-gradient-slider-2)" rx="10px" ry="10px"
+                                    x="0" y="0" width="100%" />
+                            </svg>
                             <svg class="btn__icon icon-arrow_forward">
                                 <use xlink:href="images/logo/sprite.svg#arrow_forward"></use>
                             </svg>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="articles__list_new main__articles">
+                <div class="container main__articles-box">
+                    <h2 class="articles__title">Статьи</h2>
+                    <ul class="articles__list">
+                        <li class="articles__item">
+                            <a href="https://ecomobilcars.ru/articles/%d1%82%d0%b5%d1%81%d1%82-6/"
+                                class="articles__item-link">
+                                <img width="367" height="479" src="images/Frame-581.png"
+                                    class="articles__item-img wp-post-image" alt="" decoding="async"
+                                    fetchpriority="high"
+                                    srcset="https://ecomobilcars.ru/wp-content/uploads/2024/02/Frame-581.png 367w, https://ecomobilcars.ru/wp-content/uploads/2024/02/Frame-581-230x300.png 230w"
+                                    sizes="(max-width: 367px) 100vw, 367px" />
+                                <div class="articles__item-descr">
+                                    <h2 class="articles__item-title">А также реплицированные с зарубежных источников
+                                    </h2>
+                                    <div class="articles__item-text">Значимость этих проблем настолько очевидна, что
+                                        разбавленное изрядной долей эмпатии, рациональное мышление требует анализа
+                                        благоприятных перспектив.</div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="articles__item">
+                            <a href="https://ecomobilcars.ru/articles/example-article/" class="articles__item-link">
+                                <img width="367" height="479"
+                                    src="https://ecomobilcars.ru/wp-content/uploads/2024/02/articles.webp"
+                                    class="articles__item-img wp-post-image" alt="Изображение превью" decoding="async"
+                                    srcset="https://ecomobilcars.ru/wp-content/uploads/2024/02/articles.webp 960w, https://ecomobilcars.ru/wp-content/uploads/2024/02/articles-300x225.webp 300w, https://ecomobilcars.ru/wp-content/uploads/2024/02/articles-768x576.webp 768w"
+                                    sizes="(max-width: 960px) 100vw, 960px" />
+                                <div class="articles__item-descr">
+                                    <h2 class="articles__item-title">Тест групп полей (превью)</h2>
+                                    <div class="articles__item-text">
+                                        <p>Задача организации, в особенности же базовый вектор развития создаёт
+                                            предпосылки для соответствующих условий активизации. Следует&#8230;</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="articles__item">
+                            <a href="https://ecomobilcars.ru/articles/%d1%82%d0%b5%d1%81%d1%82-3/"
+                                class="articles__item-link">
+                                <img width="367" height="480"
+                                    src="https://ecomobilcars.ru/wp-content/uploads/2024/02/Frame-591.png"
+                                    class="articles__item-img wp-post-image" alt="" decoding="async"
+                                    srcset="https://ecomobilcars.ru/wp-content/uploads/2024/02/Frame-591.png 367w, https://ecomobilcars.ru/wp-content/uploads/2024/02/Frame-591-229x300.png 229w"
+                                    sizes="(max-width: 367px) 100vw, 367px" />
+                                <!-- <img src="/wp-content/themes/Ecomobil/assets/images/articles.webp" alt="Превью статьи" class="articles__item-img"> -->
+                                <div class="articles__item-descr">
+                                    <h2 class="articles__item-title">Тест 3</h2>
+                                    <div class="articles__item-text">
+                                        <p>Кстати, элементы политического процесса и по сей день остаются уделом
+                                            либералов, которые жаждут быть заблокированы&#8230;</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href='https://ecomobilcars.ru/articles/' class="main__btn main__btn_dark btn btn-load">
+                        <svg class="btn-border">
+                            <linearGradient id="linear-gradient-dark" x1="20%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="rgba(0, 0, 0, 0.03)" />
+                                <stop offset="100%" stop-color="rgba(0, 0, 0, 1)" />
+                            </linearGradient>
+                            <rect stroke-width="1.5" stroke="url(#linear-gradient-dark)" rx="10px" ry="10px" x="0" y="0"
+                                width="100%" />
+                        </svg>
+
+                        Еще статьи</a>
+                </div>
+            </div>
+
+            <div class="request request_dark">
+                <div class="request__img-box">
+                    <img src="images/request.webp" alt="request" class="request__img">
+                </div>
+                <div class="request__container">
+                    <div class="request__left">
+                        <div class="request__descr">
+                            <svg class="btn-border">
+                                <linearGradient id="linear-gradient" x1="40%" y1="50%" x2="100%" y2="50%">
+                                    <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
+                                    <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
+                                </linearGradient>
+                                <rect stroke-width="2" stroke="url(#linear-gradient)" rx="20px" ry="20px" x="0" y="0"
+                                    width="100%" />
+                            </svg>
+                            Подберем комплектацию,<br>расскажем об автомобиле,<br>сформируем уникальное предложение
+                        </div>
+                        <div class="logo__box">
+                            <a href="/" class="logo__link">
+                                <img src="images/logo/ECOMOBIL.svg" alt="Ecomobil" class="logo__img" loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="request__right">
+                        <div class="logo__box">
+                            <a href="/" class="logo__link">
+                                <img src="images/logo/ECOMOBIL.svg" alt="Ecomobil" class="logo__img" loading="lazy">
+                            </a>
+                        </div>
+                        <form id="feedback-1" action="#" class="form" method="post">
+                            <input type="hidden" name="action" value="custom_feedback_form">
+                            <div class="form__box">
+                                <h3 class="form__title">Узнать подробнее</h3>
+                                <div class="form__item">
+                                    <label for="name">Имя</label>
+                                    <input type="text" name="name" id="name">
+                                </div>
+                                <div class="form__item">
+                                    <label for="phone">Телефон</label>
+                                    <input type="text" name="phone" data-phone-pattern id="phone">
+                                </div>
+                                <div class="form__item">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                            </div>
+                            <button type="submit" class="form__btn btn">
+                                <svg class="btn-border">
+                                    <linearGradient id="linear-gradient" x1="10%" y1="60%" x2="70%" y2="40%">
+                                        <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
+                                        <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
+                                    </linearGradient>
+                                    <rect stroke-width="1.5" stroke="url(#linear-gradient)" rx="10px" ry="10px" x="0"
+                                        y="0" width="100%" />
+                                </svg>
+
+                                Отправить
+                            </button>
+                            <div class="error-box"></div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="popup">
+                <div class="popup__box">
+                    <svg class="popup__icon">
+                        <use xlink:href="/wp-content/themes/Ecomobil/assets/images/sprite.svg#check"></use>
+                    </svg>
+                    <p class="popup__text">Спасибо, ваша заявка принята</p>
+                    <span class="popup__span">Наш менеджер свяжется с вами в ближайшее время</span>
+                    <button type="submit" class="popup__btn form__btn btn">
+                        <svg class="btn-border">
+                            <linearGradient id="linear-gradientPopup" x1="10%" y1="60%" x2="70%" y2="40%">
+                                <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
+                                <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
+                            </linearGradient>
+                            <rect stroke-width="1.5" stroke="url(#linear-gradientPopup)" rx="10px" ry="10px" x="0" y="0"
+                                width="100%" />
+                        </svg>
+                        Вернуться на сайт
                     </button>
                 </div>
-
             </div>
-            <div class="button__container">
-                <button class="btn__gray btn-linear block-btn">
-                    <svg class="btn-border__gray">
-                        <linearGradient id="linear-gradient" x1="20%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
-                            <stop offset="100%" stop-color="rgba(255, 255, 255, 1)" />
-                        </linearGradient>
-                        <rect stroke-width="1.5" stroke="url(#linear-gradient)" rx="10px" ry="10px" x="0" y="0"
-                            width="100%" />
-                    </svg>
-
-                    Ещё</button>
+        </div>
+        <footer class="footer container-dark">
+            <div class="footer__container container">
+                <div class="footer__heading">
+                    <div class="logo__box">
+                        <a href="/" class="logo__link">
+                            <img src="/images/logo.png" alt="Ecomobil" class="logo__img">
+                        </a>
+                    </div>
+                    <div class="menu-footer-container">
+                        <ul id="menu-footer" class="bmenu">
+                            <li id="menu-item-892"
+                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-892"><a
+                                    href="https://ecomobilcars.ru/brands/">Авто</a></li>
+                            <li id="menu-item-891"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-891"><a
+                                    href="https://ecomobilcars.ru/about/">О компании</a></li>
+                            <li id="menu-item-893"
+                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-893"><a
+                                    href="https://ecomobilcars.ru/articles/">Статьи</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__content">
+                    <div class="footer__descr">
+                        <a href="/privacy" class="footer__link">Политика конфиденциальности</a>
+                        <p class="footer__text">Вся представленная на сайте информация, касающаяся автомобилей, носит
+                            информационный характер и не является публичной офертой, определяемой положением ст.437 (2)
+                            ГК РФ. Для получения подробной информации просьба обращаться по телефону <a
+                                href="tel:79990009900" class="footer__contact-link">+7 (999) 000-99-00</a>.
+                            Опубликованная на данном сайте информация может быть изменена в любое время без
+                            предварительного уведомления.</p>
+                        <p>Данный веб-сайт использует cookie-файлы с целью повышения удобства и эффективности работы
+                            пользователя
+                        </p>
+                    </div>
+                    <div class="footer__contact">
+                        <a href="tel:79999999999" class="contact__link">+7 (999) 999-99-99</a>
+                        <a href="mailto:adress@gmail.com" class="contact__link">adress@gmail.com</a>
+                        <div class="contact__social-box">
+                            <a href="#" class="contact__link">
+                                <svg class="contact__social-icon">
+                                    <use xlink:href="/wp-content/themes/Ecomobil/assets/images/sprite.svg#telegram">
+                                    </use>
+                                </svg>
+                            </a>
+                            <a href="#" class="contact__link">
+                                <svg class="contact__social-icon">
+                                    <use xlink:href="/wp-content/themes/Ecomobil/assets/images/sprite.svg#whatsapp">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">&#169; 2024 Ecomobil. Все права защищены</div>
             </div>
+        </footer>
+    </div>
+    </div>
 
-        </div> -->
+    </footer>
 
 
-    </main>
-    <script src="./js/index.js"></script>
+
+
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/tabs.js"></script>
+    <script src="./js/carousel.js"></script>
 </body>
 
 </html>

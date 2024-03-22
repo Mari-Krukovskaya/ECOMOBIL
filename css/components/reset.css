@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Cera Pro';
+    background-color: rgb(24, 24, 24);
+}
+
+.main-container {
+    flex-grow: 1;
+    height: 100%;
+    color: #fff;
+    overflow: hidden;
+
+
+}
+
+.parallax-mirror .parallax-slider,
+.parallax-mirror:first-child .parallax-slider {
+    position: absolute;
+    aspect-ratio: auto;
+    max-height: 436px;
+    top: 709px;
+    left: -279px;
+    rotate: -28.34deg;
+    opacity: 0.1;
+}
+
+.parallax-mirror:nth-child(2) .parallax-slider,
+.parallax-mirror:nth-child(4) .parallax-slider {
+    max-height: 747.59px;
+    top: 709px;
+    left: 509.5px;
+    rotate: -13deg;
+}
+
+    /* { */
+    /* max-height: 747.59px;
+    top: 700px;
+    left: 509px;
+    rotate: -13.02deg; */
+
+/* } */
+
+/* 
+.container-dark {
+    background-color: rgb(24, 24, 24);
+    background-image: url(/wp-content/themes/Ecomobil/assets/images/BG_logo.png);
+    background-size: 50%;
+    background-position: right -25%;
+    background-repeat: no-repeat;
+} */
+
+.container {
+    max-width: 1172px;
+    margin: 0 auto 75px;
+    padding: 0 16px;
+}
+
+.banner {
+    /* min-height: 675px;
+    max-height: 100vh;
+    width: 100%;
+    aspect-ratio: 2.13 /1; */
+    height: 675px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    display: block;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    border: none;
+    background-color: transparent;
+    min-width: 175px;
+    border-radius: 10px;
+    height: 51px;
+
+}
+
+.card_border {
+    position: relative;
+}
+
+.btn .btn-border,
+.card_border .btn-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn .btn-border {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-load {
+    padding: 13px 33px;
+    min-width: 175px;
+}
+
+.card_border .btn-border {
+    width: 100%;
+    height: 100%;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-border rect {
+    fill: transparent;
+    height: 100%;
+    width: 100%;
+    stroke-dasharray: 500;
+
+}
+
+.card_border .btn-border rect {
+    stroke-dasharray: 2000;
+}
+
+.btn-prev .btn-border rect {
+    stroke-dasharray: 500;
+}
+
+.btn:not(.btn-prev, .form__btn, .slider__button-next, .slider__button-prev, .tab__btn):hover .btn-border rect {
+    animation: btnBorderAnimation 2s ease-in-out infinite;
+}
+
+.btn-prev:hover .btn-border rect {
+    /* animation: btnBorderAnimation 2s ease-in-out infinite;
+    /* animation-direction: reverse; */
+}
+
+.btn-prev:hover .icon-arrow_back {
+    animation: arrowBack 2s ease-in-out infinite;
+}
+
+.btn-prev:hover .icon-arrow_forward {
+    animation: arrowBack 2s ease-in-out infinite;
+}
+
+.btn-forward:hover .icon-arrow_forward {
+    animation: arrowForward 2s ease-in-out infinite;
+}
+
+.btn__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.btn__icon {
+    stroke: #fff;
+    height: 18px;
+    width: 12px;
+
+}
+
+.icon-arrow_back {
+    margin-right: 16px;
+}
+
+.icon-arrow_forward {
+    margin-left: 16px;
+}
+
+@keyframes arrowBack {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes arrowForward {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes arrowForwardBrands {
+    0% {
+
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes btnBorderAnimation {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes navBtnBorderAnimation {
+    0% {
+        stroke-dashoffset: 500;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+
+@media(max-width: 999px) {
+
+    .content {
+        max-width: 640px;
+        margin: 0 auto 40px;
+    }
+
+    .banner {
+        height: 360px;
+    }
+
+    .btn,
+    .btn .btn-border {
+        min-width: 189px;
+    }
+
+    .btn-load {
+        padding: 14px 40px;
+        min-width: 189px;
+    }
+
+    .slider__button-prev:hover {
+        animation: arrowBackGallery 1s ease-in-out infinite;
+    }
+
+    .slider__button-next:hover {
+        animation: arrowNextGallery 1s ease-in-out infinite;
+    }
+
+
+    @keyframes arrowBackGallery {
+        0% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(-3px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes arrowNextGallery {
+        0% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(3px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
+
+@media(max-width: 640px) {
+    .content {
+        max-width: 100%;
+        margin-bottom: 48px;
+    }
+
+    .btn {
+        font-size: 12px;
+        line-height: 120%;
+        min-width: auto;
+        height: 28px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .btn .btn-border {
+        width: 100%;
+        height: 28px;
+        min-width: auto;
+        border-radius: 5px;
+    }
+
+    .btn__icon {
+        width: 9px;
+        height: 9px;
+    }
+
+    .btn-load {
+        min-width: 85px;
+        padding: 7px 10px;
+    }
+
+    .icon-arrow_back {
+        position: relative;
+
+        margin-right: 7px;
+    }
+
+    @keyframes arrowBack {
+        0% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(-10px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
