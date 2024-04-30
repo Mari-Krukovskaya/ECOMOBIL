@@ -68,6 +68,10 @@
     justify-content: flex-end;
 }
 
+.header__contact {
+    white-space: nowrap;
+}
+
 .header__nav ul li a, #menu-footer .menu-item a, .current_page_item a, .current-menu-item a {
     position: relative;
     display: flex;
